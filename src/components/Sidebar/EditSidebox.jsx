@@ -1,6 +1,6 @@
-import { Card, Row, Col } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
-const SideboxEdit = () => {
+const EditSidebox = () => {
   return (
     <Card>
       <Card.Body className="d-flex flex-column p-3">
@@ -41,4 +41,4 @@ const SideboxEdit = () => {
   );
 };
 
-export default SideboxEdit;
+export default EditSidebox;
