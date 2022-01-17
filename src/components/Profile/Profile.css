@@ -1,16 +1,12 @@
 .home__wrap {
   width: calc(95vw - 300px - 300px);
-  height: 100%;
   overflow-x: hidden;
   position: absolute;
-  /*  padding: 100px; */
   left: 200px;
   padding-top: 0;
   color: black;
   margin-top: 3vh;
-  border: 1px solid rgba(0, 0, 0, 0.205);
   border-radius: 7px;
-  overflow: hidden;
 }
 
 h2 {

@@ -8,7 +8,6 @@ const Home = ({ userProfile, setUserProfile }) => {
   return (
     <>
       <Profile userProfile={userProfile} setUserProfile={setUserProfile} />
-
       <Sidebar />
     </>
   );
