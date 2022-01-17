@@ -1,4 +1,4 @@
-import { Card, Image } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 const PromotedSideBox = () => {
   return (

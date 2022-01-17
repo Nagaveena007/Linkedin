@@ -1,0 +1,49 @@
+#also-viewed .h5 {
+  font-weight: bold;
+}
+
+#also-viewed a {
+  color: black;
+  font-weight: bold;
+}
+
+#also-viewed a:hover {
+  color: black !important;
+}
+
+#also-viewed p {
+  color: var(--gray-text);
+  font-weight: lighter;
+}
+
+#also-viewed .btn-connect {
+  background-color: transparent;
+  border-radius: 25px;
+  border: 1px solid black;
+  color: var(--gray-text);
+  font-weight: bold;
+  letter-spacing: 0.08rem;
+  font-size: 0.9rem;
+}
+
+#also-viewed .btn-connect:hover {
+  background-color: var(--bg-color);
+  border: 2px solid var(--gray-text);
+}
+
+#also-viewed .card-bottom {
+  border: none;
+  border-radius: 0px;
+  width: 100%;
+}
+
+#also-viewed .card-bottom:hover {
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+}
+
+#also-viewed .bi-chevron-compact-down {
+  font-weight: bold;
+  font-size: 20px;
+}
