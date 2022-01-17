@@ -1,0 +1,106 @@
+#navbar-body{
+    color: #666666;
+    font-size: 0.8rem;
+    border-bottom: #d1d1d1;
+}
+#navbar-logo{
+    height: 34px;
+    width: 34px;
+}
+.navbar-right-section{
+    border-left: 1px solid #d1d1d1;
+    padding-left: 20px;
+}
+.navbar-profile-pic{
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+}
+#shrinking-btn:active:hover{
+    animation: shrink 0.9s ease;
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.85);
+    }
+}
+
+#form-control-search-form-control{
+    border: none;
+    border-radius: 0;
+    font-size: 0.9rem;
+    background-color: #EEF3F8;
+}
+#navbar-search-container{
+    background-color: #EEF3F8;
+}
+#navbar-search-icon{
+    color: #666666;
+}
+.navbar-icon-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 22px;
+}
+.navbar-icon-container:hover{
+    color:black;
+    cursor: pointer;
+}
+#try-premium{
+    color:5D3B09;
+}
+#try-premium:hover{
+    text-decoration: black !important;
+}
+#navbar-center{
+    display: flex;
+    flex-direction: row;
+}
+#modal-view-profile-btn-container{
+    display: flex;
+    justify-content: center;
+}
+#modal-view-profile-btn{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #0072b1;
+    border-color: #0072b1;
+}
+#modal-view-profile-btn:hover{
+    background-color:white;
+    border-width: 2px;
+    animation: blip 0.5s;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+@keyframes blip {
+    0% {
+        background-color: white;
+    }
+    30% {
+        background-color: #0073b13a;
+    }
+    100% {
+        background-color: white;
+    }
+}
+#modal-profile-pic {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.modal-profile-container > div> img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
