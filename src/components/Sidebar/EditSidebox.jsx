@@ -2,7 +2,7 @@ import { Card } from "react-bootstrap";
 
 const EditSidebox = () => {
   return (
-    <Card>
+    <Card className="mb-3">
       <Card.Body className="d-flex flex-column p-3">
         <span className="d-flex flex-row">
           <Card.Link href="#" className="text-gray">

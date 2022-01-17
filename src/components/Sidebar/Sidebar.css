@@ -65,3 +65,32 @@
   box-shadow: 3px 3px 8px 2px var(--gray-color);
   z-index: 2;
 }
+
+#promoted img {
+  width: 52px;
+}
+
+#promoted p {
+  font-size: 0.6rem;
+}
+
+#promoted a {
+  color: black;
+}
+
+#promoted .card-body a:hover {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+#promoted > a:first-of-type:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+#promoted .bi-chevron-compact-right {
+  color: var(--gray-color);
+  font-weight: bold;
+  font-size: 40px;
+}
