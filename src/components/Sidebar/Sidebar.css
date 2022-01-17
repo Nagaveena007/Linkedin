@@ -57,6 +57,7 @@
   text-align: start;
   width: 280px;
   font-style: normal;
+  right: 6px;
 }
 
 #sidebar i:hover .hide-show > .card {
