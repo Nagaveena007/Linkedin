@@ -2,7 +2,7 @@ import { Card } from "react-bootstrap";
 
 const EditSidebox = () => {
   return (
-    <Card className="mb-3">
+    <Card className="mb-3" style={{ borderRadius: "7px" }}>
       <Card.Body className="d-flex flex-column p-3">
         <span className="d-flex flex-row">
           <Card.Link href="#" className="text-gray">
@@ -13,7 +13,8 @@ const EditSidebox = () => {
             <span className="hide-show">
               <Card body className="p-0">
                 {" "}
-                See and edit how you look to people who are not signed in, and find you through search engines (ex: Google, Bing).
+                See and edit how you look to people who are not signed in, and
+                find you through search engines (ex: Google, Bing).
               </Card>
             </span>
           </i>

@@ -9,10 +9,16 @@
   --blue: #0a66c2;
   --font: "Roboto", sans-serif;
 }
-
-.bg {
-  background-color: var(--bg-color);
+.sidebar__wrap {
+  height: calc(100vh - 100px);
+  width: 300px;
+  margin-top: 3vh;
+  right: 0;
+  margin-left: 150vh;
 }
+/* .bg {
+  background-color: var(--bg-color);
+} */
 #sidebar * {
   font-family: var(--font);
   letter-spacing: 0.03rem;

@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 const PromotedSideBox = () => {
   return (
     <>
-      <Card id="promoted" className="p-2 mb-4">
+      <Card id="promoted" className="p-2 mb-4" style={{ borderRadius: "7px" }}>
         <Card.Link className="d-flex flex-row">
           Promoted{" "}
           <i className="d-flex align-self-end bi bi-three-dots ml-auto"></i>
@@ -31,7 +31,8 @@ const PromotedSideBox = () => {
             <Card.Link href="#">Reactivate now</Card.Link>
 
             <Card.Text className="d-flex flex-row align-items-center">
-              Continue learning your Linkedin. Learning plan today. Cancel anytime.
+              Continue learning your Linkedin. Learning plan today. Cancel
+              anytime.
               <i class="bi bi-chevron-compact-right"></i>
             </Card.Text>
           </Card.Body>
@@ -45,7 +46,8 @@ const PromotedSideBox = () => {
             <Card.Link href="#">Invitation from Linkedin</Card.Link>
 
             <Card.Text className="d-flex flex-row align-items-center">
-              Place ads on Linkedin. Acquire new customers from your business. Try it now.
+              Place ads on Linkedin. Acquire new customers from your business.
+              Try it now.
               <i class="bi bi-chevron-compact-right"></i>
             </Card.Text>
           </Card.Body>
