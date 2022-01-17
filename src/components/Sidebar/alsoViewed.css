@@ -34,12 +34,14 @@
 #also-viewed .card-bottom {
   border: none;
   border-radius: 0px;
+  border-top: 1px solid var(--main-gray-color);
   width: 100%;
 }
 
 #also-viewed .card-bottom:hover {
   cursor: pointer;
   border: none;
+  border-top: 1px solid var(--main-gray-color);
   border-radius: 0px;
 }
 
