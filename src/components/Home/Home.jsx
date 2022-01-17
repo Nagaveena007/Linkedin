@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom";
 import "../FeaturedPosts/FeaturedPosts";
 import FeaturedPosts from "../FeaturedPosts/FeaturedPosts";
 import Profile from "../Profile/Profile";
 
-const Home = () => {
+const Home = ({ userProfile }) => {
   return (
     <>
-      <Profile />
+      <Profile details={userProfile} />
+
       <FeaturedPosts />
+      
+
     </>
   );
 };

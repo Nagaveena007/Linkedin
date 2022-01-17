@@ -1,19 +1,26 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Profile from "./components/Profile/Profile";
-import Home from "./components/Home/Home";
-
 import MyNav from "./components/MyNav/MyNav.jsx";
-import { BrowserRouter } from "react-router-dom";
+import Home from "./components/Home/Home.jsx";
+import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
+  const [userProfile, setUserProfile] = useState({});
+
   return (
     <>
       <BrowserRouter>
-        <MyNav />
-        <Home />
+        <MyNav userProfile={userProfile} setUserProfile={setUserProfile} />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Home userProfile={userProfile} setUserProfile={setUserProfile} />
+            }
+          />
+        </Routes>
       </BrowserRouter>
     </>
   );
 }
-
 export default App;

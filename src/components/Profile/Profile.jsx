@@ -1,6 +1,6 @@
 import { Container, Col, Card, Image, Row, Button } from "react-bootstrap";
 import "./Profile.css";
-const Profile = () => {
+const Profile = (props) => {
   return (
     <>
       <Container
@@ -17,7 +17,7 @@ const Profile = () => {
         <Row className=" user__detail ">
           <Col xs={12} md={8}>
             <h4 className="name mb-0">
-              Nagaveena Hallikeri
+              {props.details.name}
               <small style={{ fontSize: "medium" }} className="text-muted ml-1">
                 (She/her)
               </small>
