@@ -1,6 +1,6 @@
 /* import { useState } from 'react' */
 import { Col } from "react-bootstrap"
-import "./Sidebar.css";
+import "./sidebar.css";
 import "./alsoViewed.css"
 
 import EditSidebox from "./EditSidebox";

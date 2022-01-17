@@ -10,7 +10,7 @@ const Home = ({ userProfile }) => {
       <Profile details={userProfile} />
 
       <FeaturedPosts />
-      <Sidebar/>
+      <div id="sidebar"><Sidebar/></div>
       
 
     </>
