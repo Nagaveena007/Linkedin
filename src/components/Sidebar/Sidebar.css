@@ -1,0 +1,97 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
+:root {
+  --main-gray-color: #ebebeb;
+  --bg-color: #f3f2ef;
+  --gray-text: #868686;
+  --gray-color: #666666;
+  --blue: #0a66c2;
+  --font: "Roboto", sans-serif;
+}
+
+.bg {
+  background-color: var(--bg-color);
+}
+#sidebar * {
+  font-family: var(--font);
+  letter-spacing: 0.03rem;
+  font-size: 0.8rem;
+}
+
+#sidebar .card {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+#sidebar .card-link:hover {
+  cursor: default;
+  text-decoration: underline;
+  color: var(--blue);
+}
+
+#sidebar .text-gray {
+  color: var(--gray-text);
+  font-weight: bold;
+}
+
+#sidebar i {
+  color: var(--gray-color);
+}
+
+#sidebar hr {
+  border: 1px solid var(--main-gray-color);
+  width: 100%;
+}
+
+#sidebar .hide-show {
+  display: none;
+  position: absolute;
+}
+#sidebar i {
+  position: relative;
+}
+
+#sidebar i:hover .hide-show {
+  display: block;
+  text-align: start;
+  width: 280px;
+  font-style: normal;
+}
+
+#sidebar i:hover .hide-show > .card {
+  border-radius: 0.5rem 0 0.5rem 0.5rem;
+  -webkit-box-shadow: 3px 3px 8px 2px var(--gray-color);
+  box-shadow: 3px 3px 8px 2px var(--gray-color);
+  z-index: 2;
+}
+
+#promoted img,
+#also-viewed img {
+  width: 52px;
+}
+
+#promoted p {
+  font-size: 0.6rem;
+}
+
+#promoted a {
+  color: black;
+}
+
+#promoted .card-body a:hover {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+#promoted > a:first-of-type:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+#promoted .bi-chevron-compact-right {
+  color: var(--gray-color);
+  font-weight: bold;
+  font-size: 40px;
+}
