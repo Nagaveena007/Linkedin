@@ -3,10 +3,7 @@ import { useState, useEffect } from "react";
 import { Card, Button } from "react-bootstrap";
 
 const AlsoViewed = () => {
-  const [profiles, setProfiles] = useState({ 
-      profiles: [] 
-    });
-
+  
   return (
     <Card id="also-viewed" className="mb-4">
       <Card.Title className="my-3 px-2 pt-2">People also viewed</Card.Title>
@@ -76,7 +73,7 @@ const AlsoViewed = () => {
         </Card.Body>
       </div>
       <Button className="btn-connect card-bottom d-flex justify-content-center align-items-center">
-        Show more <i class="bi bi-chevron-compact-down ml-1"></i>
+        Show more <i className="bi bi-chevron-compact-down ml-1"></i>
       </Button>
     </Card>
   );

@@ -18,7 +18,7 @@ const PromotedSideBox = () => {
             <Card.Text className="d-flex flex-row align-items-center">
               Grammarly helps you write effectively in Gmail and LinkedIn.
               Install now!
-              <i class="bi bi-chevron-compact-right"></i>
+              <i className="bi bi-chevron-compact-right"></i>
             </Card.Text>
           </Card.Body>
         </div>
@@ -32,7 +32,7 @@ const PromotedSideBox = () => {
 
             <Card.Text className="d-flex flex-row align-items-center">
               Continue learning your Linkedin. Learning plan today. Cancel anytime.
-              <i class="bi bi-chevron-compact-right"></i>
+              <i className="bi bi-chevron-compact-right"></i>
             </Card.Text>
           </Card.Body>
         </div>
@@ -46,7 +46,7 @@ const PromotedSideBox = () => {
 
             <Card.Text className="d-flex flex-row align-items-center">
               Place ads on Linkedin. Acquire new customers from your business. Try it now.
-              <i class="bi bi-chevron-compact-right"></i>
+              <i className="bi bi-chevron-compact-right"></i>
             </Card.Text>
           </Card.Body>
         </div>

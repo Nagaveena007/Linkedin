@@ -25,6 +25,7 @@ import {
 } from 'react-bootstrap-icons'
 import './Navbar.css';
 const {REACT_APP_TOKEN} = process.env;
+console.log(REACT_APP_TOKEN);
 
 const MyNav = () => {
     const [userProfile, setUserProfile] = useState({})

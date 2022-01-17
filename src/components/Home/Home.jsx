@@ -8,11 +8,8 @@ const Home = ({ userProfile }) => {
   return (
     <>
       <Profile details={userProfile} />
-
       <FeaturedPosts />
       <div id="sidebar"><Sidebar/></div>
-      
-
     </>
   );
 };

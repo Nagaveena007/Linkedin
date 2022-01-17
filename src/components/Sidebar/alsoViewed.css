@@ -9,6 +9,7 @@
 
 #also-viewed a:hover {
   color: black !important;
+  cursor: pointer !important;
 }
 
 #also-viewed p {
