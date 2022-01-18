@@ -7,6 +7,7 @@ import EditSidebox from "./EditSidebox";
 import PromotedSideBox from "./PromotedSideBox";
 import AlsoViewed from "./AlsoViewed";
 import PeopleMayKnow from "./PeopleMayKnow";
+import Learning from './Learning';
 
 const Sidebar = () => {
   const [users, setUsers] = useState([]);
@@ -45,6 +46,7 @@ const Sidebar = () => {
       <PromotedSideBox />
       <AlsoViewed users={users} setUsers={setUsers} />
       <PeopleMayKnow users={users} setUsers={setUsers} />
+      <Learning />
     </Col>
   );
 };
