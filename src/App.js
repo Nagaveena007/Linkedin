@@ -5,12 +5,10 @@ import Home from "./components/Home/Home";
 import FooterPart from "./components/FooterPart/FooterPart";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Profile from "./components/Profile/Profile";
-import Sidebar from "./components/Sidebar/Sidebar";
-import Home1 from "./components/Home/Home1";
+
+import DefaultFeeds from "./components/Home/DefaultFeeds";
 import NotFound from "./components/NotFound";
 function App() {
-  /*  const [loggedInUser,seLloggedInUser ] */
   const [userProfile, setUserProfile] = useState({});
 
   return (
@@ -22,7 +20,7 @@ function App() {
           <Route
             path="/"
             element={
-              <Home1
+              <DefaultFeeds
                 userProfile={userProfile}
                 setUserProfile={setUserProfile}
               />
@@ -37,7 +35,6 @@ function App() {
           />
           <Route path="*" element={<NotFound error="Page not found" />} />
         </Routes>
-        {/* <FeaturedPosts /> */}
       </BrowserRouter>
       <FooterPart />
     </>

@@ -4,7 +4,7 @@ import FeaturedPosts from "../FeaturedPosts/FeaturedPosts";
 import Profile from "../Profile/Profile";
 import Sidebar from "../Sidebar/Sidebar";
 import "../Sidebar/Sidebar.css";
-const Home1 = ({ userProfile, setUserProfile }) => {
+const DefaultFeeds = ({ userProfile, setUserProfile }) => {
   return (
     <>
       <Profile userProfile={userProfile} setUserProfile={setUserProfile} />
@@ -12,4 +12,4 @@ const Home1 = ({ userProfile, setUserProfile }) => {
     </>
   );
 };
-export default Home1;
+export default DefaultFeeds;
