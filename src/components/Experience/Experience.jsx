@@ -1,6 +1,29 @@
 import { Card, Container, Row } from "react-bootstrap";
 import "./Experience.css";
+import { useEffect } from "react";
+import { useState } from "react";
 const Experience = () => {
+  const [showPopOver, setShowPopOver] = useState(true);
+  const [userProfile, setUserProfile] = useState({});
+
+  const getUserInfo = async () => {
+    try {
+      const url = "https://striveschool-api.herokuapp.com/api/profile/me";
+      const response = await fetch(url, {
+        headers: {
+          Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU1Mzk4MjczZDVjYjAwMTUzOTVhYTAiLCJpYXQiOjE2NDI0MTI0MTgsImV4cCI6MTY0MzYyMjAxOH0.pThqB6JpxblIICSTu_1_bvzATxqrTMzSkUG8gFX-4vc
+          `,
+        },
+      });
+      if (response.ok) {
+        const userData = await response.json();
+        setUserProfile(userData);
+        return userProfile;
+      }
+    } catch (error) {
+      console.log("Error", error.message);
+    }
+  };
   return (
     <Card
       className="px-2 mt-4 mb-2"

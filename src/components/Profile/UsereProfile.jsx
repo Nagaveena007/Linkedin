@@ -24,17 +24,13 @@ const UsereProfile = ({ userProfile }) => {
             />
           </Row>
           <Row className="profile__photo ml-1">
-            <img
-              src="profile-photo.jpg"
-              /* {userProfile.image} */ className="img-fluid"
-            />
+            <img src={userProfile.image} className="img-fluid" />
           </Row>
 
           <Row className=" user__detail ">
             <Col xs={12} md={8}>
               <h4 className="name mb-0">
-                Nagaveena Hallikeri
-                {/*  {userProfile.name} {userProfile.surname} */}
+                {userProfile.name} {userProfile.surname}
                 <small
                   style={{ fontSize: "medium" }}
                   className="text-muted ml-1"
