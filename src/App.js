@@ -2,6 +2,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MyNav from "./components/MyNav/MyNav.jsx";
 import Home from "./components/Home/Home.jsx";
+import FooterPart from "./components/FooterPart/FooterPart";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
@@ -20,6 +21,7 @@ function App() {
           />
         </Routes>
       </BrowserRouter>
+      <FooterPart />
     </>
   );
 }
