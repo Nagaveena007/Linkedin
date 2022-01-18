@@ -9,7 +9,7 @@ const FooterPart = () => {
       <Row>
         <Col xs={12} md={10}>
           <Row>
-            <div className="mr-2">
+            <div className="mr-3">
               <Col xs={12} md={6} lg={3}>
                 <a href=""> about </a>
               </Col>
@@ -26,7 +26,7 @@ const FooterPart = () => {
                 <a href=""> safety center </a>
               </Col>
             </div>
-            <div className="mr-2">
+            <div className="mr-3">
               <Col xs={12} md={6} lg={3}>
                 <a href=""> accessibility </a>
               </Col>
@@ -40,7 +40,7 @@ const FooterPart = () => {
                 <a href=""> mobile </a>
               </Col>
             </div>
-            <div>
+            <div className="mr-3">
               <Col xs={12} md={6} lg={3}>
                 <a href=""> talent solutions </a>
               </Col>
@@ -54,7 +54,7 @@ const FooterPart = () => {
                 <a href=""> small business </a>
               </Col>
             </div>
-            <div id="footer-settings">
+            <div id="footer-settings" className="mr-3">
               <Col xs={12} md={6} lg={3} className="d-flex flex-row">
                 <i class="bi bi-question-circle-fill mx-0 mt-2"></i>
                 <div className="ml-2">
@@ -70,21 +70,23 @@ const FooterPart = () => {
                 </div>
               </Col>
             </div>
+            <div>
+              <Col xs={12} md={6} lg={3}>
+                <Form>
+                  <Form.Group controlId="languages">
+                    <Form.Label>Select language</Form.Label>
+                    <Form.Control as="select">
+                      <option>English</option>
+                      <option>Italian</option>
+                      <option>Russian</option>
+                      <option>French</option>
+                      <option>German</option>
+                    </Form.Control>
+                  </Form.Group>
+                </Form>
+              </Col>
+            </div>
           </Row>
-        </Col>
-        <Col xs={12} md={2} className="p-0">
-          <Form>
-            <Form.Group controlId="languages">
-              <Form.Label>Select language</Form.Label>
-              <Form.Control as="select">
-                <option>English</option>
-                <option>Italian</option>
-                <option>Russian</option>
-                <option>French</option>
-                <option>German</option>
-              </Form.Control>
-            </Form.Group>
-          </Form>
         </Col>
       </Row>
       <Row>

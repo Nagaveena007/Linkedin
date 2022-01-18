@@ -27,3 +27,7 @@
 #footer i {
   color: #666666;
 }
+
+#footer form {
+  width: 220px;
+}
