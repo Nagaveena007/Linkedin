@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react' 
+import { useState, useEffect } from 'react'
 import { Col } from "react-bootstrap";
 import "./Sidebar.css";
 import "./alsoViewed.css";
@@ -17,13 +17,12 @@ const Sidebar = () => {
   }, []);
 
   const fetchUsers = async () => {
-    const { REACT_APP_TOKEN } = process.env;
     try {
       let response = await fetch(
         "https://striveschool-api.herokuapp.com/api/profile",
         {
           headers: {
-            Authorization: `Bearer ${REACT_APP_TOKEN}`,
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU2YjIwOWMyYzE4ODAwMTVhYjk0YTEiLCJpYXQiOjE2NDI1MDg4MTAsImV4cCI6MTY0MzcxODQxMH0.JAfyKqdxjSdTol524cwYXpcd7LDhynRxo5EuWv9T7Ac`,
           },
         }
       );
