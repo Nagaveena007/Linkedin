@@ -2,20 +2,22 @@ import { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import RandomUsersCard from "./RandomUsersCard";
 
-const AlsoViewed = (props) => {
+const PeopleMayKnow = (props) => {
+
   const [contentToShow, setContentToShow] = useState(false);
   const toggleShowMore = () => {
-    setContentToShow(!contentToShow);
-  };
+    setContentToShow(!contentToShow)
+  }
 
-  const ArrowDown = () => <i className="bi bi-chevron-compact-down ml-1"></i>;
-  const ArrowUp = () => <i class="bi bi-chevron-compact-up ml-1"></i>;
+  const ArrowDown = () => <i className="bi bi-chevron-compact-down ml-1"></i>
+  const ArrowUp = () => <i class="bi bi-chevron-compact-up ml-1"></i>
+
 
   return (
     <Card id="also-viewed" className="mb-4">
-      <Card.Title className="my-3 px-2 pt-2">People also viewed</Card.Title>
+      <Card.Title className="my-3 px-2 pt-2">People you may know</Card.Title>
 
-      {props.users.slice(0, 5).map((user) => (
+      {props.users.slice(100, 105).map((user) => (
         <RandomUsersCard
           src={user.image}
           alt={user.name}
@@ -27,7 +29,7 @@ const AlsoViewed = (props) => {
       ))}
       {contentToShow && (
         <div>
-          {props.users.slice(6, 11).map((user) => (
+          {props.users.slice(106, 111).map((user) => (
             <RandomUsersCard
               src={user.image}
               alt={user.name}
@@ -43,11 +45,11 @@ const AlsoViewed = (props) => {
         className="btn-connect card-bottom d-flex justify-content-center align-items-center"
         onClick={() => toggleShowMore()}
       >
-        {contentToShow ? `Show less` : "Show more"}{" "}
-        {contentToShow ? ArrowUp() : ArrowDown()}
+        {contentToShow ? `Show less` : "Show more"} {contentToShow ? ArrowUp() : ArrowDown()}
+        
       </Button>
     </Card>
   );
 };
 
-export default AlsoViewed;
+export default PeopleMayKnow;
