@@ -1,7 +1,7 @@
 import { Container, Col, Card, Image, Row, Button } from "react-bootstrap";
 import Activity from "../Activity/Activity";
 import Education from "../Education/Education";
-import Experience from "../Experience/Experience";
+
 import { useEffect } from "react";
 import { useParams } from "react-router";
 import Experiences from "../Experience/Experiences";

@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import { parseISO } from "date-fns";
-
-const SingleExperience = ({ experience }) => {
+import {PencilFill, PlusLg} from 'react-bootstrap-icons'
+import './Experience.css'
+import { useParams } from "react-router";
+const SingleExperience = ({ experience , userProfile, setUserProfile}) => {
   const [userExperience, setUserExperience] = useState({
     area: "",
     role: "",
@@ -11,7 +13,7 @@ const SingleExperience = ({ experience }) => {
     startDate: "",
     endDate: "",
   });
-
+  const params= useParams()
   useEffect(
     () =>
       setUserExperience({
@@ -24,7 +26,59 @@ const SingleExperience = ({ experience }) => {
       }),
     [experience]
   );
-
+  const putExperiences = async() =>{
+    try {
+      const response = await fetch(
+        `https://striveschool-api.herokuapp.com/api/profile/${ userProfile._id }/experiences/${ params._id}`,
+        {
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU2ODM3OWMyYzE4ODAwMTVhYjk0OWMiLCJpYXQiOjE2NDI0OTY4OTAsImV4cCI6MTY0MzcwNjQ5MH0.T6x0XrVZuqOI5X7c5AEoxgXRux2f4Q_UHHjEvuutJCc`,
+          },
+          method: "PUT",
+          body: JSON.stringify(data),
+        }
+      );
+      console.log(response);
+      if (!response.ok) {
+        throw new Error("Failed to fetch");
+      } else {
+        const updatedExperience = await response.json();
+        return updatedExperience;
+      }
+    } catch (error) {
+      console.log(error);
+      throw new Error(error);
+    }
+  };
+  
+  const deleteExperience = async () => {
+    try {
+      const response = await fetch(
+        `https://striveschool-api.herokuapp.com/api/profile/${userProfile._id}/experiences/${params._id}`,
+        {
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU2ODM3OWMyYzE4ODAwMTVhYjk0OWMiLCJpYXQiOjE2NDI0OTY4OTAsImV4cCI6MTY0MzcwNjQ5MH0.T6x0XrVZuqOI5X7c5AEoxgXRux2f4Q_UHHjEvuutJCc`,
+          },
+          method: "DELETE",
+        }
+      );
+      console.log(response);
+      if (!response.ok) {
+        throw new Error("Failed to fetch");
+      } else {
+        const deletedExperience = await response.json();
+        return deletedExperience;
+      }
+    } catch (error) {
+      console.log(error);
+      throw new Error(error);
+    }
+  };
+   
   return (
     <>
       <div style={{ marginLeft: "12px" }}>
@@ -37,6 +91,17 @@ const SingleExperience = ({ experience }) => {
               className="ml-1"
             />
           </div>
+          <div className="col-md-1 d-flex-end">
+        <PlusLg size={26} id="plus-icon-open-edit-form" />
+        </div>
+        <div className="col-md-1 mr-sm-2">
+          <PencilFill
+            size={20}
+            id="pencil-icon-open-edit-form"
+            
+          />
+        </div>
+        
           <div className="col-md-4">
             {/* <h6>Frontend Developer </h6> */}
             <h6>{userExperience.role} </h6>
