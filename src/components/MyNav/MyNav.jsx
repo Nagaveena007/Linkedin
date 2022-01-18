@@ -27,8 +27,8 @@ import "./Navbar.css";
 const { REACT_APP_TOKEN } = process.env;
 
 const MyNav = ({ userProfile, setUserProfile }) => {
-    const [showPopOver, setShowPopOver] = useState(true);
 
+  const [showPopOver, setShowPopOver] = useState(true);
 
     useEffect(() => {
         getUserInfo();
