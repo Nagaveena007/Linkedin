@@ -3,7 +3,7 @@ import "./FooterPart.css";
 const FooterPart = () => {
   return (
     <Container id="footer">
-      <Row className="pl-3 pb-2">
+      <Row className="pl-3 pb-2 mt-5">
         <Image src="../images/promoted/linkedinADS.png" alt="linkedin logo" />
       </Row>
       <Row>
