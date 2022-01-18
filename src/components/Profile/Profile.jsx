@@ -2,19 +2,26 @@ import { Container, Col, Card, Image, Row, Button } from "react-bootstrap";
 import Activity from "../Activity/Activity";
 import Education from "../Education/Education";
 import Experience from "../Experience/Experience";
+import { useEffect } from "react";
+import { useParams } from "react-router";
+import Experiences from "../Experience/Experiences";
 import FeaturedPosts from "../FeaturedPosts/FeaturedPosts";
 import Licenses from "../Licenses/Licenses";
 
 import "./Profile.css";
 import UsereProfile from "./UsereProfile";
 const Profile = ({ userProfile, setUserProfile }) => {
+  const params = useParams();
+
+  useEffect(() => {}, [params]);
   return (
     <Col className="home__wrap ">
       <UsereProfile userProfile={userProfile} setUserProfile={setUserProfile} />
-
       <FeaturedPosts />
       <Activity />
-      <Experience />
+      {/*       <Experience userProfile={userProfile} setUserProfile={setUserProfile} />
+       */}{" "}
+      <Experiences />
       <Education />
       <Licenses />
     </Col>

@@ -2,16 +2,20 @@ import { Card, Container, Row } from "react-bootstrap";
 import "./Experience.css";
 import { useEffect } from "react";
 import { useState } from "react";
-const Experience = () => {
+const Experience = ({ userProfile, setUserProfile }) => {
   const [showPopOver, setShowPopOver] = useState(true);
-  const [userProfile, setUserProfile] = useState({});
-
+  useEffect(() => {
+    getUserInfo();
+    //eslint-disable-next-line
+  }, []);
   const getUserInfo = async () => {
     try {
-      const url = "https://striveschool-api.herokuapp.com/api/profile/me";
+      const url =
+        "https://striveschool-api.herokuapp.com/api/profile/me/experiences";
       const response = await fetch(url, {
         headers: {
-          Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU1Mzk4MjczZDVjYjAwMTUzOTVhYTAiLCJpYXQiOjE2NDI0MTI0MTgsImV4cCI6MTY0MzYyMjAxOH0.pThqB6JpxblIICSTu_1_bvzATxqrTMzSkUG8gFX-4vc
+          Authorization: `Bearer 
+          eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU2ODM3OWMyYzE4ODAwMTVhYjk0OWMiLCJpYXQiOjE2NDI0OTY4OTAsImV4cCI6MTY0MzcwNjQ5MH0.T6x0XrVZuqOI5X7c5AEoxgXRux2f4Q_UHHjEvuutJCc
           `,
         },
       });
@@ -43,14 +47,18 @@ const Experience = () => {
             />
           </div>
           <div className="col-md-4">
-            <h6>Frontend Developer </h6>
+            {/* <h6>Frontend Developer </h6> */}
+            <h6>{userProfile.role} </h6>
             <p>
-              <small> Strive School · Student </small>
+              {/*  <small> Strive School · Student </small> */}
+              <small> {userProfile.company} · Student </small>
               <br />
               <small className="text-muted">
-                Sep 2021 - Present · 5 mos
+                {userProfile.startDate} - {userProfile.endDate}
+                {/*  Sep 2021 - Present · 5 mos */}
                 <br />
-                Berlin, Germany
+                {userProfile.area}
+                {/*  Berlin, Germany */}
               </small>
             </p>
           </div>
@@ -59,6 +67,7 @@ const Experience = () => {
             software development practices.
             <br />• Creating website layout/user interfaces by using standard
             React-JS,Redux,JS, HTML/CSS, practices.
+            <br /> {userProfile.description}
             <span>
               <small className="text-muted"> ...see more</small>
             </span>
