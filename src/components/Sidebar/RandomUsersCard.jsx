@@ -1,4 +1,4 @@
-import { Card, Button } from "react-bootstrap"
+import { Card, Button } from "react-bootstrap";
 
 const RandomUsersCard = (props) => {
   return (
@@ -17,4 +17,4 @@ const RandomUsersCard = (props) => {
   );
 };
 
-export default RandomUsersCard
+export default RandomUsersCard;

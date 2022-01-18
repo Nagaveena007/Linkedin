@@ -58,7 +58,7 @@ const MyNav = ({ userProfile, setUserProfile }) => {
         <ListGroupItem>
           <div className="d-flex modal-profile-container">
             <div>
-              <img src={userProfile.image} alt="profile-pic" />
+              <img src={userProfile.image} />
             </div>
             <div className="ml-3">
               <h5>

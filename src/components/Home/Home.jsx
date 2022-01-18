@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../FeaturedPosts/FeaturedPosts";
+import FooterPart from "../FooterPart/FooterPart";
 import Profile from "../Profile/Profile";
 import Sidebar from "../Sidebar/Sidebar";
 
