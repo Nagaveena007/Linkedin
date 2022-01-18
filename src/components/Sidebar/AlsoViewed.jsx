@@ -4,10 +4,15 @@ import RandomUsersCard from "./RandomUsersCard";
 
 const AlsoViewed = () => {
   const [users, setUsers] = useState([]);
+
   const [contentToShow, setContentToShow] = useState(false);
   const toggleShowMore = () => {
     setContentToShow(!contentToShow)
   }
+
+  const ArrowDown = () => <i className="bi bi-chevron-compact-down ml-1"></i>
+  const ArrowUp = () => <i class="bi bi-chevron-compact-up ml-1"></i>
+
   useEffect(() => {
     fetchUsers();
   }, []);
@@ -68,8 +73,8 @@ const AlsoViewed = () => {
         className="btn-connect card-bottom d-flex justify-content-center align-items-center"
         onClick={() => toggleShowMore()}
       >
-        {contentToShow ? "Show less" : "Show more"}
-        <i className="bi bi-chevron-compact-down ml-1"></i>
+        {contentToShow ? `Show less` : "Show more"} {contentToShow ? ArrowUp() : ArrowDown()}
+        
       </Button>
     </Card>
   );

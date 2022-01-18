@@ -46,7 +46,8 @@
   border-radius: 0px;
 }
 
-#also-viewed .bi-chevron-compact-down {
+#also-viewed .bi-chevron-compact-down,
+#also-viewed .bi-chevron-compact-up {
   font-weight: bold;
   font-size: 20px;
 }
