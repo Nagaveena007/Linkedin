@@ -1,12 +1,19 @@
-import FeaturedPosts from "../FeaturedPosts/FeaturedPosts";
+import { Link } from "react-router-dom";
+import "../FeaturedPosts/FeaturedPosts";
 import Profile from "../Profile/Profile";
+import Sidebar from "../Sidebar/Sidebar";
 
-const Home = ({userProfile, setUserProfile}) => {
+import "../Sidebar/Sidebar.css";
+
+const Home = ({ userProfile, setUserProfile }) => {
   return (
     <>
-      <Profile userProfile={userProfile} setUserProfile={setUserProfile}/>
-      {/* <FeaturedPosts /> */}
+      <Profile userProfile={userProfile} setUserProfile={setUserProfile} />
+      <div id="sidebar">
+        <Sidebar />
+      </div>
     </>
   );
 };
+
 export default Home;
