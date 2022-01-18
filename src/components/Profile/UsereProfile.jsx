@@ -24,7 +24,7 @@ const UsereProfile = ({ userProfile }) => {
             />
           </Row>
           <Row className="profile__photo ml-1">
-            <img src={userProfile.image} className="img-fluid" />
+            <img src="profile-photo.jpg" className="img-fluid" />
           </Row>
 
           <Row className=" user__detail ">

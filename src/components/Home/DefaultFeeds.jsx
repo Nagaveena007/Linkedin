@@ -8,7 +8,9 @@ const DefaultFeeds = ({ userProfile, setUserProfile }) => {
   return (
     <>
       <Profile userProfile={userProfile} setUserProfile={setUserProfile} />
-      <Sidebar />
+      <div id="sidebar" className="pl-5 ml-5 mt-4">
+        <Sidebar />
+      </div>{" "}
     </>
   );
 };

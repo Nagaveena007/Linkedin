@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../FeaturedPosts/FeaturedPosts";
+import FooterPart from "../FooterPart/FooterPart";
 import Profile from "../Profile/Profile";
 import Sidebar from "../Sidebar/Sidebar";
 
@@ -9,7 +10,7 @@ const Home = ({ userProfile, setUserProfile }) => {
   return (
     <>
       <Profile userProfile={userProfile} setUserProfile={setUserProfile} />
-      <div id="sidebar">
+      <div id="sidebar" className="pl-5 ml-5 mt-4">
         <Sidebar />
       </div>
     </>

@@ -1,7 +1,6 @@
 import { Container, Col, Card, Image, Row, Button } from "react-bootstrap";
 import Activity from "../Activity/Activity";
 import Education from "../Education/Education";
-import Experience from "../Experience/Experience";
 import { useEffect } from "react";
 import { useParams } from "react-router";
 import Experiences from "../Experience/Experiences";
@@ -15,12 +14,10 @@ const Profile = ({ userProfile, setUserProfile }) => {
 
   useEffect(() => {}, [params]);
   return (
-    <Col className="home__wrap ">
+    <Col className="home__wrap pr-5 mr-5">
       <UsereProfile userProfile={userProfile} setUserProfile={setUserProfile} />
       <FeaturedPosts />
       <Activity />
-      {/*       <Experience userProfile={userProfile} setUserProfile={setUserProfile} />
-       */}{" "}
       <Experiences />
       <Education />
       <Licenses />

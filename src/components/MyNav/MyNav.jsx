@@ -27,7 +27,7 @@ import "./Navbar.css";
 const { REACT_APP_TOKEN } = process.env;
 
 const MyNav = ({ userProfile, setUserProfile }) => {
-  const [showPopOver, setShowPopOver] = useState(true);
+  const [showPopOver, setShowPopOver] = useState(false);
 
   useEffect(() => {
     getUserInfo();
@@ -58,7 +58,7 @@ const MyNav = ({ userProfile, setUserProfile }) => {
         <ListGroupItem>
           <div className="d-flex modal-profile-container">
             <div>
-              <img src={userProfile.image} alt="profile-pic" />
+              <img src={userProfile.image} />
             </div>
             <div className="ml-3">
               <h5>
