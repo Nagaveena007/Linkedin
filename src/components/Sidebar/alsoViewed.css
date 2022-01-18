@@ -9,6 +9,7 @@
 
 #also-viewed a:hover {
   color: black !important;
+  cursor: pointer !important;
 }
 
 #also-viewed p {
@@ -45,7 +46,13 @@
   border-radius: 0px;
 }
 
-#also-viewed .bi-chevron-compact-down {
+#also-viewed .bi-chevron-compact-down,
+#also-viewed .bi-chevron-compact-up {
   font-weight: bold;
   font-size: 20px;
+}
+
+#also-viewed .disabled {
+  color: var(--gray-text);
+  font-weight: lighter;
 }

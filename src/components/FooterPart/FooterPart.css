@@ -1,0 +1,33 @@
+#footer img {
+  width: 60px;
+}
+
+#footer a,
+#footer p,
+#footer .form-label,
+#footer .form-control {
+  color: #868686;
+  text-transform: capitalize;
+  font-size: 0.7rem;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+  color: #0a66c2;
+}
+
+#footer-settings a {
+  font-weight: bold;
+}
+
+#footer .col-lg-3 {
+  max-width: 100%;
+}
+
+#footer i {
+  color: #666666;
+}
+
+#footer form {
+  width: 220px;
+}

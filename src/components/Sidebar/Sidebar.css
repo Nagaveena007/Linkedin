@@ -7,6 +7,7 @@
   --gray-text: #868686;
   --gray-color: #666666;
   --blue: #0a66c2;
+  --links-color: #5894d0;
   --font: "Roboto", sans-serif;
 }
 .sidebar__wrap {
@@ -30,10 +31,20 @@
   border-radius: 0.5rem;
 }
 
-#sidebar .card-link:hover {
+#learning .card-link {
+  color: var(--gray-color);
+  font-weight: bold;
+}
+
+#sidebar .card-link:hover,
+#learning .card-link:hover {
   cursor: default;
   text-decoration: underline;
   color: var(--blue);
+}
+
+#learning .card-link:hover {
+  cursor: pointer;
 }
 
 #sidebar .text-gray {
@@ -63,6 +74,7 @@
   text-align: start;
   width: 280px;
   font-style: normal;
+  right: 6px;
 }
 
 #sidebar i:hover .hide-show > .card {
@@ -100,4 +112,35 @@
   color: var(--gray-color);
   font-weight: bold;
   font-size: 40px;
+}
+
+#learning .card-title > span {
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+
+#learning .logo {
+  width: 20px;
+}
+
+#learning img {
+  width: 60px;
+}
+
+#learning .border-bottom {
+  border-bottom: 1px solid var(--gray-text);
+}
+
+#learning button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  border-top: 1px solid var(--gray-text);
+  color: var(--links-color);
+  font-weight: bold;
+}
+
+#learning button:hover {
+  background-color: var(--bg-color);
 }
