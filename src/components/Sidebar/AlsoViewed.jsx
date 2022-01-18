@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-
 import { Card, Button } from "react-bootstrap";
+import RandomUsersCard from "./RandomUsersCard";
 
 const AlsoViewed = () => {
 
@@ -22,8 +22,10 @@ const AlsoViewed = () => {
         }
       );
       if (response.ok) {
-        let responseJson = response.json();
+        let responseJson = await response.json();
         console.log(responseJson);
+        setUsers(responseJson)
+        return users
       } else {
         console.log("error on fetching data");
       }
@@ -32,74 +34,16 @@ const AlsoViewed = () => {
     }
   };
 
+
   return (
     <Card id="also-viewed" className="mb-4">
       <Card.Title className="my-3 px-2 pt-2">People also viewed</Card.Title>
-      <div className="d-flex flex-row align-items-center px-2">
-        <Card.Img src="../images/promoted/grammarly.png" alt="grammarly logo" />
-        <Card.Body className="p-0 ml-2">
-          <Card.Link href="#">
-            Name Surname · 2nd
-            <Card.Text className="d-flex flex-row align-items-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Temporibus sed quae maxim
-            </Card.Text>
-          </Card.Link>
-          <Button className="btn-connect my-2">Connect</Button>
-        </Card.Body>
-      </div>
-      <div className="d-flex flex-row align-items-center px-2">
-        <Card.Img src="../images/promoted/grammarly.png" alt="grammarly logo" />
-        <Card.Body className="p-0 ml-2">
-          <Card.Link href="#">
-            Name Surname · 2nd
-            <Card.Text className="d-flex flex-row align-items-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Temporibus sed quae maxim
-            </Card.Text>
-          </Card.Link>
-          <Button className="btn-connect my-2">Connect</Button>
-        </Card.Body>
-      </div>
-      <div className="d-flex flex-row align-items-center px-2">
-        <Card.Img src="../images/promoted/grammarly.png" alt="grammarly logo" />
-        <Card.Body className="p-0 ml-2">
-          <Card.Link href="#">
-            Name Surname · 2nd
-            <Card.Text className="d-flex flex-row align-items-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Temporibus sed quae maxim
-            </Card.Text>
-          </Card.Link>
-          <Button className="btn-connect my-2">Connect</Button>
-        </Card.Body>
-      </div>
-      <div className="d-flex flex-row align-items-center px-2">
-        <Card.Img src="../images/promoted/grammarly.png" alt="grammarly logo" />
-        <Card.Body className="p-0 ml-2">
-          <Card.Link href="#">
-            Name Surname · 2nd
-            <Card.Text className="d-flex flex-row align-items-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Temporibus sed quae maxim
-            </Card.Text>
-          </Card.Link>
-          <Button className="btn-connect my-2">Connect</Button>
-        </Card.Body>
-      </div>
-      <div className="d-flex flex-row align-items-center px-2">
-        <Card.Img src="../images/promoted/grammarly.png" alt="grammarly logo" />
-        <Card.Body className="p-0 ml-2">
-          <Card.Link href="#">
-            Name Surname · 2nd
-            <Card.Text className="d-flex flex-row align-items-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Temporibus sed quae maxim
-            </Card.Text>
-          </Card.Link>
-          <Button className="btn-connect my-2">Connect</Button>
-        </Card.Body>
-      </div>
+          {
+            users.slice(0,8).map((user) => (
+              <RandomUsersCard src={user.image} alt={user.name} text={user.title} name={user.name} surname={user.surname}/>
+            ))
+          }
+      
       <Button className="btn-connect card-bottom d-flex justify-content-center align-items-center">
         Show more <i className="bi bi-chevron-compact-down ml-1"></i>
       </Button>
