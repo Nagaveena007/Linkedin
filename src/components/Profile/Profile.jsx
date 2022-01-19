@@ -8,6 +8,7 @@ import FeaturedPosts from "../FeaturedPosts/FeaturedPosts";
 import Licenses from "../Licenses/Licenses";
 import "./Profile.css";
 import UsereProfile from "./UsereProfile";
+import Skills from "../Skills/Skills"
 
 const Profile = ({ userProfile, setUserProfile }) => {
   const params = useParams();
@@ -23,6 +24,7 @@ const Profile = ({ userProfile, setUserProfile }) => {
       {/* <Experiences  userProfile={userProfile} setUserProfile={setUserProfile}/> */}
       <Education />
       <Licenses />
+      <Skills />
     </Col>
   );
 };
