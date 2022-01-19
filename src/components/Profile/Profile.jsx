@@ -14,16 +14,23 @@ const Profile = ({ userProfile, setUserProfile }) => {
 
   useEffect(() => {}, [params]);
   return (
-    <Col className="home__wrap ">
-      <UsereProfile userProfile={userProfile} setUserProfile={setUserProfile} />
-      <FeaturedPosts />
-      <Activity />
-      {/*       <Experience userProfile={userProfile} setUserProfile={setUserProfile} />
-       */}{" "}
-      <Experiences  userProfile={userProfile} setUserProfile={setUserProfile}/>
-      <Education />
-      <Licenses />
-    </Col>
+    <>
+      <Col className="home__wrap pr-5">
+        <UsereProfile
+          userProfile={userProfile}
+          setUserProfile={setUserProfile}
+        />
+        <FeaturedPosts />
+        <Activity />
+
+        <Experiences
+          userProfile={userProfile}
+          setUserProfile={setUserProfile}
+        />
+        <Education />
+        <Licenses />
+      </Col>
+    </>
   );
 };
 export default Profile;

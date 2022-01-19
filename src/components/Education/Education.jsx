@@ -1,4 +1,6 @@
 import { Card, Container, Row } from "react-bootstrap";
+import { PencilFill, PlusLg } from "react-bootstrap-icons";
+
 import "./Education.css";
 const Education = () => {
   return (
@@ -9,6 +11,16 @@ const Education = () => {
       }}
     >
       <h5 className="title__activity mb-4">Education</h5>
+      <div className="d-flex mr-auto" style={{ marginLeft: "42em" }}>
+        <PlusLg size={26} id="" className="mt-4 mr-4" />
+        <PencilFill
+          size={20}
+          id=""
+          className=""
+          style={{ marginTop: "1.7em" }}
+        />
+      </div>
+
       <div style={{ marginLeft: "12px" }}>
         <div className="row">
           <div className="col-md-1">
