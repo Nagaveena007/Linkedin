@@ -3,3 +3,8 @@
   height: 50px;
   border-radius: 50%;
 }
+
+.modal-dialog {
+  width: 600px;
+  margin: 1.75rem auto;
+}

@@ -3,6 +3,7 @@ import "../FeaturedPosts/FeaturedPosts";
 import Profile from "../Profile/Profile";
 import Sidebar from "../Sidebar/Sidebar";
 import SingleFeed from "./SingleFeed";
+import NewPost from "./NewPost";
 import "../Sidebar/Sidebar.css";
 import "./Home.css"
 
@@ -38,6 +39,7 @@ const DefaultFeeds = ({ userProfile, setUserProfile }) => {
 
   return (
     <div id="feed" className="d-flex align-items-center flex-column">
+      <NewPost />
       { posts.filter(post=>post.user).map((post) => (
         <SingleFeed
           image={post.user.image}
