@@ -1,14 +1,17 @@
 .feed {
   flex: 0.6;
   margin: 0 120px;
-  width: 70%;
+  width: 68%;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  margin-left: 12em;
 }
 .feed__inputContainer {
-  background-color: #e9eaee;
+  background-color: #ffff;
   padding: 10px;
   padding-bottom: 20px;
   border-radius: 10px;
-  margin-bottom: 20px;
+  height: 18vh;
 }
 .feed__input {
   border: 1px solid lightgray;
@@ -33,4 +36,117 @@
 }
 .feed__input > form > button {
   display: none;
+}
+
+.search__bar__elements__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-left: 1vh;
+  margin-top: 1.6vh;
+  color: grey;
+}
+.search__container__onscroll {
+  border-radius: 3rem;
+  border: 1px solid rgb(179, 173, 173);
+  background-color: white;
+  color: black;
+  height: 7vh;
+  box-shadow: 0px 2px 12px 1px rgb(235, 227, 227);
+  width: 58vh;
+  cursor: pointer;
+}
+.search__container__onscroll:hover {
+  background-color: #ebebeb;
+}
+.search__btn__onscroll {
+  border-radius: 2rem;
+  border-color: transparent;
+  background-color: #ff385c;
+  color: white;
+  cursor: pointer;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  font-family: inherit !important;
+  line-height: 16px !important;
+  user-select: auto !important;
+  display: inline-flex !important;
+  padding: 6px !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+.start__btn {
+  border-color: transparent;
+  background-color: transparent;
+}
+.start__btn:hover {
+  border-radius: 0.3rem;
+  background-color: #ebebeb;
+  border-color: transparent;
+}
+.start__txt {
+  font-weight: 500;
+  font-size: smaller;
+}
+.start__img {
+  width: 3.7em;
+  height: 3.7em;
+  border-radius: 50%;
+}
+#modal__title {
+  font-size: 20px;
+  font-weight: 400;
+}
+.anyone__btn {
+  background-color: #ffff;
+  border: 2px solid rgb(156, 151, 151);
+  color: black;
+  border-radius: 1.3rem;
+  width: 8.5em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.anyone__btn:hover {
+  background-color: #c5bcbc;
+  border: 2px solid #969494;
+  color: black;
+}
+.anyone__btn__footer {
+  background-color: #ffff;
+  border: 2px solid rgb(156, 151, 151);
+  color: black;
+  border-radius: 1.3rem;
+  width: 6em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown__btn {
+  background-color: transparent;
+  color: rgb(153, 148, 148);
+  border-color: transparent;
+  margin-top: 3px;
+}
+
+.dropdown__btn:hover {
+  background-color: transparent;
+  color: black;
+  border-color: transparent;
+}
+.hashtag__btn {
+  color: #0a66c2;
+  font-weight: 600;
+}
+.close__btn {
+  width: 4.5em;
+  background-color: #e2e6ea;
+  color: rgb(156, 151, 151);
+  border-radius: 1.3rem;
+  height: 2em;
+  display: flex;
+  align-items: center;
 }

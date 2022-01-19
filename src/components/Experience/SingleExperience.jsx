@@ -155,7 +155,7 @@ const SingleExperience = ({
               <small className="text-muted ">
                 {startDate} - {endDate}
                 <br />
-                {area}z
+                {area}
               </small>
             </p>
             <p className="  ">

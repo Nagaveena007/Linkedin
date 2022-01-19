@@ -7,15 +7,7 @@ import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-const DeleteFeeds = ({
-  company,
-  id,
-  role,
-  area,
-  startDate,
-  endDate,
-  description,
-}) => {
+const DeleteFeeds = ({ image, name, surname, title, text, key }) => {
   const [selectedExperience, setSelectedExperience] = useState(null);
 
   const [singleCompany, setSingleCompany] = useState("");
@@ -106,7 +98,8 @@ const DeleteFeeds = ({
     try {
       const response = await fetch(
         `https://striveschool-api.herokuapp.com/api/profile/61e68379c2c1880015ab949c/experiences/${selectedExperience}`,
-        {
+        /*         https://striveschool-api.herokuapp.com/api/posts/{postId}
+         */ {
           method: "DELETE",
           headers: {
             Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU2ODM3OWMyYzE4ODAwMTVhYjk0OWMiLCJpYXQiOjE2NDI0OTY4OTAsImV4cCI6MTY0MzcwNjQ5MH0.T6x0XrVZuqOI5X7c5AEoxgXRux2f4Q_UHHjEvuutJCc
@@ -125,8 +118,8 @@ const DeleteFeeds = ({
   };
   return (
     <>
-      <div style={{ marginLeft: "12px" }}>
-        <div className="col-md-1 mr-sm-2">
+      <Card style={{ width: "35rem" }} className="my-1">
+        <Card.Body>
           <PencilFill
             style={{ marginLeft: "42em", marginBottom: "3em" }}
             size={20}
@@ -136,38 +129,23 @@ const DeleteFeeds = ({
               setSelectedExperience(id);
             }}
           />
-        </div>
-        <div className="row">
-          <div className="col-md-1">
-            <img
-              src="https://strive.school/favicon.ico"
-              alt=""
-              style={{ width: "3em", height: "3em" }}
-              className="ml-1"
+          <div className="d-flex flex-row">
+            <Image
+              src={image}
+              alt="profile picture of"
+              {...name}
+              {...surname}
             />
+            <span className="d-flex flex-column ml-3">
+              <Card.Title>
+                {name} {surname}
+              </Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">{title}</Card.Subtitle>
+            </span>
           </div>
-
-          <div className="col-md-4">
-            <h6>{role} </h6>
-            <p>
-              <small> {company} </small>
-              <br />
-              <small className="text-muted ">
-                {startDate} - {endDate}
-                <br />
-                {area}z
-              </small>
-            </p>
-            <p className="  ">
-              <strong>
-                <small>{description}</small>{" "}
-                <small className="text-muted"> ...see more</small>
-              </strong>
-            </p>
-          </div>
-        </div>
-      </div>
-
+          <Card.Text>{text}</Card.Text>
+        </Card.Body>
+      </Card>
       <Modal show={editExperience} onHide={closeEditExperience}>
         <Modal.Header closeButton>
           <Modal.Title>Edit Experience</Modal.Title>

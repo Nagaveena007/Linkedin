@@ -11,45 +11,181 @@ import {
   MusicPlayer,
 } from "react-bootstrap-icons";
 import "./StartAPost.css";
+import { BiWorld, BiMessageRoundedDetail } from "react-icons/bi";
 
+import { BsThreeDots } from "react-icons/bs";
+
+import { MdPhotoSizeSelectActual, MdPoll } from "react-icons/md";
+import { RiVideoFill, RiHandbagFill, RiSettings2Fill } from "react-icons/ri";
+
+import { IoDocumentText } from "react-icons/io5";
+import {
+  FcImageFile,
+  FcClapperboard,
+  FcPicture,
+  FcPlanner,
+  FcViewDetails,
+} from "react-icons/fc";
+import {
+  MydModalWithGrid,
+  Dropdown,
+  Image,
+  Form,
+  Card,
+  Modal,
+  Button,
+  Col,
+  Row,
+  Container,
+} from "react-bootstrap";
+import { useState } from "react";
 const StartAPost = () => {
+  const [modalShow, setModalShow] = useState(false);
+  function MydModalWithGrid(props) {
+    return (
+      <Modal {...props} aria-labelledby="contained-modal-title-vcenter">
+        <Modal.Header closeButton>
+          <span id="modal__title">Create a post</span>
+        </Modal.Header>
+        <Modal.Body className="show-grid">
+          <Container>
+            <Row>
+              <Card.Body>
+                <div className="d-flex flex-row">
+                  <Image
+                    src="profile-photo.jpg"
+                    alt=""
+                    className="start__img"
+                  />
+                  <span className="d-flex flex-column ml-3">
+                    <Card.Text className="">Nagaveena Hallikeri</Card.Text>
+                    <Card.Subtitle className="text-muted">
+                      <Button variant="light" className="anyone__btn">
+                        <BiWorld className="mr-2 text-muted" />
+                        Anyone
+                        <Dropdown>
+                          <Dropdown.Toggle
+                            variant="light"
+                            split
+                            className="dropdown__btn"
+                            id="dropdown-split-basic"
+                          />
+
+                          <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1">
+                              Action
+                            </Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">
+                              Another action
+                            </Dropdown.Item>
+                          </Dropdown.Menu>
+                        </Dropdown>
+                      </Button>
+                    </Card.Subtitle>
+                  </span>
+                </div>
+              </Card.Body>
+            </Row>
+            <Row>
+              <Form>
+                <Form.Group controlId="exampleForm.ControlTextarea1">
+                  <Form.Control
+                    as="textarea"
+                    placeholder="What do you want to talk about?"
+                    rows={5}
+                    style={{ border: "transparent", width: "65vh" }}
+                  />
+                </Form.Group>
+              </Form>
+              <Button variant="light" className="hashtag__btn">
+                Add hashtag
+              </Button>
+            </Row>
+          </Container>
+        </Modal.Body>
+        <Modal.Footer className="justify-content-around">
+          <Row className="ml-3 text-muted ">
+            <MdPhotoSizeSelectActual className="mr-3" size={23} />
+            <RiVideoFill className="mr-3" size={23} />
+            <IoDocumentText className="mr-3" size={23} />
+            <RiHandbagFill className="mr-3" size={23} />
+            <RiSettings2Fill className="mr-3" size={23} />
+            <MdPoll className="mr-3" size={23} />
+            <BsThreeDots className="mr-2" size={23} />
+            <hr />
+            <Button variant="light" className="anyone__btn__footer" style={{}}>
+              <BiMessageRoundedDetail className="mr-2 text-muted" />
+              <small>Anyone</small>
+            </Button>
+
+            <Button
+              variant="light"
+              className="close__btn ml-2"
+              onClick={props.onHide}
+            >
+              Close
+            </Button>
+          </Row>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
   return (
     <>
-      <div className="feed">
-        <div className="feed__inputContainer">
-          <div className="feed__input">
-            <PencilFill />
-            <form>
-              <input
-                type="text"
-                name="post"
-                id="post-content"
-                placeholder="Start a post"
-              />
-              <button type="submit">Send</button>
-            </form>
+      <Card className="feed">
+        <Card.Body>
+          <div className="d-flex flex-row">
+            <Image src="profile-photo.jpg" alt="" className="start__img" />
+            <span className="d-flex flex-column ml-3">
+              <Card.Title>
+                <div style={{ marginTop: "1vh" }} className="">
+                  <Container className="search__container__onscroll ">
+                    <Row
+                      onClick={() => setModalShow(true)}
+                      className="search__bar__elements__row"
+                    >
+                      <small className="">Start a post</small>
+                    </Row>
+                  </Container>
+                </div>
+              </Card.Title>
+            </span>
           </div>
           <div className="feed__inputOptions d-flex justify-content-between mt-2 mx-1">
-            <span className=" d-flex">
-              <FilePost size={26} />
-              <h6 style={{ color: "gray" }}>Photo</h6>{" "}
-            </span>
-            <span className="d-flex ">
-              <MusicPlayer size={26} />
-              <h6 style={{ color: "gray" }}>Video</h6>{" "}
-            </span>
+            <Button className=" d-flex start__btn">
+              {/*    <FcImageFile size={26} /> */}
+              <FcPicture size={26} />
+              <small className="text-muted ml-2 mt-1 start__txt">
+                Photo
+              </small>{" "}
+            </Button>
+            <Button className="d-flex start__btn">
+              <FcClapperboard size={26} />
+              <small className="text-muted ml-2 mt-1 start__txt">
+                Video
+              </small>{" "}
+            </Button>
 
-            <span className="d-flex ">
-              <Calendar2Event size={26} />
-              <h6 style={{ color: "gray" }}>Events</h6>{" "}
-            </span>
-            <span className="d-flex ">
-              <JournalCheck size={26} />
-              <h6 style={{ color: "gray" }}>Write Articles</h6>{" "}
-            </span>
+            <Button className="d-flex start__btn">
+              <FcPlanner size={26} />
+              <small className="text-muted ml-2 mt-1 start__txt">
+                Events
+              </small>{" "}
+            </Button>
+            <Button className="d-flex start__btn">
+              <FcViewDetails size={26} />
+              <small className="text-muted ml-2 mt-1 start__txt">
+                Write Articles
+              </small>{" "}
+            </Button>
           </div>
-        </div>
-      </div>
+        </Card.Body>
+      </Card>
+
+      {/*  <Button variant="primary" onClick={() => setModalShow(true)}>
+        Launch modal with grid
+      </Button> */}
+      <MydModalWithGrid show={modalShow} onHide={() => setModalShow(false)} />
     </>
   );
 };
