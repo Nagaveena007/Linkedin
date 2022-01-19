@@ -56,14 +56,14 @@ const FooterPart = () => {
             </div>
             <div id="footer-settings" className="mr-3">
               <Col xs={12} md={6} lg={3} className="d-flex flex-row">
-                <i class="bi bi-question-circle-fill mx-0 mt-2"></i>
+                <i className="bi bi-question-circle-fill mx-0 mt-2"></i>
                 <div className="ml-2">
                   <a href=""> questions? </a>
                   <p> visit our help center. </p>
                 </div>
               </Col>
               <Col xs={12} md={6} lg={3} className="d-flex flex-row">
-                <i class="bi bi-gear-fill mx-0 mt-2"></i>
+                <i className="bi bi-gear-fill mx-0 mt-2"></i>
                 <div className="ml-2">
                   <a href=""> manage your account and privacy </a>
                   <p> go to your settings. </p>
