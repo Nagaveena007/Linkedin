@@ -39,7 +39,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="px-0">
+    <div id="sidebar" className="px-0">
       <EditSidebox />
       <PromotedSideBox />
       <AlsoViewed users={users} setUsers={setUsers} />
