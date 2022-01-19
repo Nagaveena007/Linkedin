@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
-import { PencilFill } from "react-bootstrap-icons";
+import { PencilFill, PlusLg } from "react-bootstrap-icons";
 import "./Experience.css";
 import { useParams } from "react-router";
 import Modal from "react-bootstrap/Modal";
@@ -126,17 +126,7 @@ const SingleExperience = ({
   return (
     <>
       <div style={{ marginLeft: "12px" }}>
-        <div className="col-md-1 mr-sm-2">
-          <PencilFill
-            style={{ marginLeft: "42em", marginBottom: "3em" }}
-            size={20}
-            id="pencil-icon-open-edit-form"
-            onClick={() => {
-              showEditExperience();
-              setSelectedExperience(id);
-            }}
-          />
-        </div>
+
         <div className="row">
           <div className="col-md-1">
             <img
@@ -147,7 +137,7 @@ const SingleExperience = ({
             />
           </div>
 
-          <div className="col-md-4">
+          <div className="col-md-4 ml-1">
             <h6>{role} </h6>
             <p>
               <small> {company} </small>
@@ -164,6 +154,28 @@ const SingleExperience = ({
                 <small className="text-muted"> ...see more</small>
               </strong>
             </p>
+          </div>
+          <div className="col-md-4 d-inline-flex">
+          </div>
+          <div className="col-md-1 d-inline-flex">
+            <PencilFill
+              size={20}
+              id="pencil-icon-open-edit-form"
+              onClick={() => {
+                showEditExperience();
+                setSelectedExperience(id);
+              }}
+            />
+          </div>
+          <div className="col-md-1 d-inline-flex">
+            <PlusLg 
+              size={26}
+              id="pencil-icon-open-edit-form"
+              onClick={() => {
+                showEditExperience();
+                setSelectedExperience(id);
+              }}
+            />
           </div>
         </div>
       </div>
