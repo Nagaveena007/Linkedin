@@ -36,7 +36,7 @@ function App() {
           <Route path="*" element={<NotFound error="Page not found" />} />
         </Routes>
       </BrowserRouter>
-      {/* <FooterPart /> */}
+      <FooterPart />
     </>
   );
 }

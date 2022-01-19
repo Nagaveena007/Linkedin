@@ -14,13 +14,13 @@ const Profile = ({ userProfile, setUserProfile }) => {
 
   useEffect(() => {}, [params]);
   return (
-    <Col className="home__wrap ">
+    <Col className="home__wrap">
       <UsereProfile userProfile={userProfile} setUserProfile={setUserProfile} />
       <FeaturedPosts />
       <Activity />
       {/*       <Experience userProfile={userProfile} setUserProfile={setUserProfile} />
        */}{" "}
-      <Experiences  userProfile={userProfile} setUserProfile={setUserProfile}/>
+      {/* <Experiences  userProfile={userProfile} setUserProfile={setUserProfile}/> */}
       <Education />
       <Licenses />
     </Col>

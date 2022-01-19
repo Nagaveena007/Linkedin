@@ -1,4 +1,4 @@
-import { Card, Container, Row } from "react-bootstrap";
+import { Card, Row } from "react-bootstrap";
 import "./FeaturedPosts.css";
 const FeaturedPosts = () => {
   return (
