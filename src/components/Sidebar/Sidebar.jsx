@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { Col } from "react-bootstrap";
 import "./Sidebar.css";
 import "./alsoViewed.css";
 
@@ -40,13 +39,13 @@ const Sidebar = () => {
   };
 
   return (
-    <Col md={2} className="offset-8 bg px-0">
+    <div className="px-0">
       <EditSidebox />
       <PromotedSideBox />
       <AlsoViewed users={users} setUsers={setUsers} />
       <PeopleMayKnow users={users} setUsers={setUsers} />
       <Learning />
-    </Col>
+    </div>
   );
 };
 
