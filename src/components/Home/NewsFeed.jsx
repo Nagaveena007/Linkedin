@@ -1,15 +1,3 @@
-/* import UsereProfile from "../Profile/UsereProfile";
-import { Col } from "react-bootstrap";
-const NewsFeed = ({ userProfile, setUserProfile }) => {
-  return (
-    <Col className="home__wrap pr-5">
-      <UsereProfile userProfile={userProfile} setUserProfile={setUserProfile} />
-    </Col>
-  );
-};
-
-export default NewsFeed;
- */
 import { useState, useEffect } from "react";
 import "../FeaturedPosts/FeaturedPosts";
 import Profile from "../Profile/Profile";
@@ -52,6 +40,7 @@ const NewsFeed = ({ userProfile, setUserProfile }) => {
     <div id="feed" className="d-flex align-items-center flex-column">
       {posts
         .filter((post) => post.user)
+        .slice(0, 6)
         .map((post) => (
           <SingleFeed
             image={post.user.image}

@@ -8,8 +8,9 @@ import NewsFeed from "./NewsFeed";
 const DefaultFeeds = ({ userProfile, setUserProfile }) => {
   return (
     <>
-      <NewsFeed userProfile={userProfile} setUserProfile={setUserProfile} />
-
+      <Col className="home__wrap pr-5">
+        <NewsFeed userProfile={userProfile} setUserProfile={setUserProfile} />
+      </Col>
       <div id="sidebar" className="pl-5 ml-5 mt-4">
         <Sidebar />
       </div>
