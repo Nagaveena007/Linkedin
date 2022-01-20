@@ -1,5 +1,7 @@
 import { Container, Col, Card, Image, Row, Button } from "react-bootstrap";
 import "./Profile.css";
+import "./ProfileEditingModal.css";
+import ProfileEditForm from "./ProfileEditingForm";
 const UsereProfile = ({ userProfile }) => {
   return (
     <>
@@ -23,9 +25,11 @@ const UsereProfile = ({ userProfile }) => {
             />
           </Row>
           <Row className="profile__photo ml-1">
-            <img className="img-fluid" src="profile-photo.jpg" />
+            <img className="img-fluid" src={userProfile.image} />
           </Row>
-
+          <Col style={{ marginLeft: "9em" }}>
+            <ProfileEditForm profileDetails={userProfile} />
+          </Col>
           <Row className=" user__detail ">
             <Col xs={12} md={8}>
               <h4 className="name mb-0">
