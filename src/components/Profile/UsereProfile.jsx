@@ -1,4 +1,5 @@
 import { Container, Col, Card, Image, Row, Button } from "react-bootstrap";
+import ProfileEditingForm from "./ProfileEditingForm";
 import "./Profile.css";
 const UsereProfile = ({ userProfile }) => {
   return (
@@ -24,6 +25,10 @@ const UsereProfile = ({ userProfile }) => {
           </Row>
           <Row className="profile__photo ml-1">
             <img className="img-fluid" src="profile-photo.jpg" />
+            <Col className="col-2 ml-auto">
+              <ProfileEditingForm profileDetails={userProfile}/>
+            </Col>
+            
           </Row>
 
           <Row className=" user__detail ">
