@@ -4,7 +4,7 @@ import "./Skills.css";
 const Skills = () => {
   return (
     <>
-      <Card id="skills">
+      <Card id="skills" className="mb-2">
         <Card.Body className="pb-0">
           <div className="d-flex flex-row">
             <Card.Title>Skills & endorsements</Card.Title>
