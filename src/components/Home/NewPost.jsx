@@ -8,7 +8,6 @@ const NewPost = () => {
   });
 
   const createNewPost = async (e) => {
-    console.log(e);
     e.preventDefault();
 
     const newPostToSend = {
