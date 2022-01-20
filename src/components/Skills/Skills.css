@@ -3,11 +3,15 @@
   font-size: 1.2rem;
 }
 
-#skills .title,
-#skills .title + i {
-  color: #868686;
+#skills .title {
+  color: #696969;
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+#skills i {
+  color: rgb(46, 46, 46);
+  font-size: 1rem;
 }
 
 #skills .title:hover {
@@ -16,7 +20,7 @@
   border-radius: 5px;
 }
 
-#skills .title + i:hover {
+#skills i:hover {
   cursor: pointer;
   background-color: #9b9b9b2c;
   border-radius: 100%;

@@ -10,7 +10,8 @@ const Skills = () => {
             <Card.Title>Skills & endorsements</Card.Title>
             <span className="d-flex flex-row ml-auto">
               <Button className="px-3 py-1 mr-2 m-0">take skill quiz</Button>
-              <p className="title p-2 m-0">Add a new skill</p>
+              {/* <p className="title p-2 m-0">Add a new skill</p> */}
+              <i class="bi bi-plus-lg p-2"></i>
               <i class="bi bi-pencil ml-3 p-2"></i>
             </span>
           </div>
