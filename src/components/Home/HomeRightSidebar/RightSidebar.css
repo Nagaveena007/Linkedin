@@ -13,10 +13,40 @@
 
 #right-sidebar h6 {
   font-size: 0.9rem;
-  columns: #434343;
+  color: #434343;
 }
 
 #right-sidebar p {
   font-size: 0.7rem;
   color: #868686;
+}
+
+#right-sidebar button {
+  background-color: transparent;
+  border-radius: 25px;
+  border: 1px solid #434343;
+  color: var(--gray-text);
+  font-weight: bold;
+  letter-spacing: 0.08rem;
+  font-size: 0.9rem;
+}
+
+#right-sidebar button:hover {
+  background-color: var(--bg-color);
+  border: 2px solid #434343;
+}
+
+#right-sidebar .card-footer {
+  background: none;
+}
+
+#right-sidebar .card-footer > p {
+  color: #868686;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+#right-sidebar .card-footer > p:hover {
+  cursor: pointer;
+  background-color: var(--bg-color);
 }

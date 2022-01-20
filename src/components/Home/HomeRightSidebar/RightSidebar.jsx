@@ -12,14 +12,34 @@ const RightSidebar = () => {
         ></i>
       </span>
       <Card.Body>
-        <div className="d-flex flex-row">
+        <div className="d-flex flex-row mb-2">
           <i className="bi bi-circle-fill mr-3" style={{ fontSize: "2rem" }}></i>
           <span>
             <h6 className="mb-0">Huawei</h6>
             <p>Company · Telecomunications</p>
+            <Button type="button" class="btn-connect btn btn-primary px-2 py-1"><i class="bi bi-plus"></i> Follow</Button>
+          </span>
+        </div>
+        <div className="d-flex flex-row mb-2">
+          <i className="bi bi-circle-fill mr-3" style={{ fontSize: "2rem" }}></i>
+          <span>
+            <h6 className="mb-0">Natalia Gutiérrez Botero</h6>
+            <p>Gerente de RRHH,Director de RRHH ...</p>
+            <Button type="button" class="btn-connect btn btn-primary px-2 py-1"><i class="bi bi-plus"></i> Follow</Button>
+          </span>
+        </div>
+        <div className="d-flex flex-row">
+          <i className="bi bi-circle-fill mr-3" style={{ fontSize: "2rem" }}></i>
+          <span>
+            <h6 className="mb-0">Samsung Electronics</h6>
+            <p>Company · Consumer Electronics</p>
+            <Button type="button" class="btn-connect btn btn-primary px-2 py-1"><i class="bi bi-plus"></i> Follow</Button>
           </span>
         </div>
       </Card.Body>
+      <Card.Footer className="pt-2 pb-0">
+        <p> View all recommendations <i class="bi bi-arrow-right ml-2"></i></p>
+      </Card.Footer>
     </Card>
   );
 };
