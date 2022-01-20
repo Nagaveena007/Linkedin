@@ -26,6 +26,7 @@ function App() {
               />
             }
           />
+          <Route path="/feed/post/:postId" element={<DefaultFeeds />} />
 
           <Route
             path="/profile/:id"

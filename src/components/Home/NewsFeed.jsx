@@ -3,6 +3,7 @@ import "../FeaturedPosts/FeaturedPosts";
 import SingleFeed from "./SingleFeed";
 import "../Sidebar/Sidebar.css";
 import "./Home.css";
+import SinglePost from "./SinglePost";
 
 const NewsFeed = ({ userProfile, setUserProfile }) => {
   const [posts, setPosts] = useState([]);
@@ -41,12 +42,13 @@ const NewsFeed = ({ userProfile, setUserProfile }) => {
         .filter((post) => post.user)
         .slice(0, 6)
         .map((post) => (
-          <SingleFeed
+          <SinglePost
             image={post.user.image}
             name={post.user.name}
             surname={post.user.surname}
             title={post.user.title}
             text={post.text}
+            id={post._id}
             key={post._id}
           />
         ))
