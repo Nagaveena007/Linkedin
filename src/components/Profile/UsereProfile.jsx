@@ -14,7 +14,6 @@ const UsereProfile = ({ userProfile }) => {
           style={{
             background: "#fff",
             borderRadius: "7px",
-            /*  border: "1px solid #b3b3b3", */
           }}
         >
           <Row className="profile__bg">
@@ -24,7 +23,7 @@ const UsereProfile = ({ userProfile }) => {
             />
           </Row>
           <Row className="profile__photo ml-1">
-            <img src="profile-photo.jpg" className="img-fluid" />
+            <img className="img-fluid" src="profile-photo.jpg" />
           </Row>
 
           <Row className=" user__detail ">

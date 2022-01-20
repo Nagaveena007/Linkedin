@@ -150,3 +150,11 @@
   display: flex;
   align-items: center;
 }
+.post__btn {
+  width: 4.5em;
+  background-color: #e2e6ea;
+  color: black;
+  border-radius: 1.3rem;
+  align-items: center;
+  margin-left: 17em;
+}

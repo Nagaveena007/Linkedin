@@ -41,6 +41,44 @@ import {
 import { useState } from "react";
 const StartAPost = () => {
   const [modalShow, setModalShow] = useState(false);
+  const [newPost, setNewPost] = useState({
+    text: " ",
+  });
+
+  const createNewPost = async (e) => {
+    console.log(e);
+    e.preventDefault();
+
+    const newPostToSend = {
+      ...newPost,
+    };
+
+    try {
+      let response = await fetch(
+        "https://striveschool-api.herokuapp.com/api/posts/",
+        {
+          method: "POST",
+          body: JSON.stringify(newPostToSend),
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU2YjIwOWMyYzE4ODAwMTVhYjk0YTEiLCJpYXQiOjE2NDI1MDg4MTAsImV4cCI6MTY0MzcxODQxMH0.JAfyKqdxjSdTol524cwYXpcd7LDhynRxo5EuWv9T7Ac`,
+          },
+        }
+      );
+      if (response.ok) {
+        const newPostJson = await response.json();
+        console.log(newPostJson);
+        setNewPost(newPostJson);
+        alert("Post was sent!");
+      } else {
+        console.log("error");
+        alert("something went wrong");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   function MydModalWithGrid(props) {
     return (
       <Modal {...props} aria-labelledby="contained-modal-title-vcenter">
@@ -87,7 +125,7 @@ const StartAPost = () => {
               </Card.Body>
             </Row>
             <Row>
-              <Form>
+              <Form className="" onSubmit={createNewPost}>
                 <Form.Group controlId="exampleForm.ControlTextarea1">
                   <Form.Control
                     as="textarea"
@@ -96,10 +134,15 @@ const StartAPost = () => {
                     style={{ border: "transparent", width: "65vh" }}
                   />
                 </Form.Group>
+                <div className="d-flex">
+                  <Button variant="light" className="hashtag__btn">
+                    Add hashtag
+                  </Button>
+                  <Button className="post__btn " variant="light" type="submit">
+                    Post
+                  </Button>
+                </div>
               </Form>
-              <Button variant="light" className="hashtag__btn">
-                Add hashtag
-              </Button>
             </Row>
           </Container>
         </Modal.Body>

@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import "../FeaturedPosts/FeaturedPosts";
-import Profile from "../Profile/Profile";
-import Sidebar from "../Sidebar/Sidebar";
 import SingleFeed from "./SingleFeed";
 import "../Sidebar/Sidebar.css";
 import "./Home.css";
@@ -19,7 +17,8 @@ const NewsFeed = ({ userProfile, setUserProfile }) => {
         "https://striveschool-api.herokuapp.com/api/posts/",
         {
           headers: {
-            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU2YjIwOWMyYzE4ODAwMTVhYjk0YTEiLCJpYXQiOjE2NDI1MDg4MTAsImV4cCI6MTY0MzcxODQxMH0.JAfyKqdxjSdTol524cwYXpcd7LDhynRxo5EuWv9T7Ac`,
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU2ODM3OWMyYzE4ODAwMTVhYjk0OWMiLCJpYXQiOjE2NDI0OTY4OTAsImV4cCI6MTY0MzcwNjQ5MH0.T6x0XrVZuqOI5X7c5AEoxgXRux2f4Q_UHHjEvuutJCc
+            `,
           },
         }
       );
@@ -50,7 +49,8 @@ const NewsFeed = ({ userProfile, setUserProfile }) => {
             text={post.text}
             key={post._id}
           />
-        ))}
+        ))
+        .reverse()}
     </div>
   );
 };
