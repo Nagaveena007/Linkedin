@@ -38,6 +38,7 @@
 
 #right-sidebar .card-footer {
   background: none;
+  border: none;
 }
 
 #right-sidebar .card-footer > p {
@@ -49,4 +50,11 @@
 #right-sidebar .card-footer > p:hover {
   cursor: pointer;
   background-color: var(--bg-color);
+}
+
+#right-sidebar #follow img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
 }

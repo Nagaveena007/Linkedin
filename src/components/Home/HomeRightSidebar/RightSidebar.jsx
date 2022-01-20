@@ -1,4 +1,4 @@
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Image } from "react-bootstrap";
 import "./RightSidebar.css";
 
 const RightSidebar = () => {
@@ -12,12 +12,9 @@ const RightSidebar = () => {
             style={{ color: "gray" }}
           ></i>
         </span>
-        <Card.Body>
-          <div className="d-flex flex-row mb-2">
-            <i
-              className="bi bi-circle-fill mr-3"
-              style={{ fontSize: "2rem" }}
-            ></i>
+        <Card.Body id="follow" className="px-1">
+          <div className="d-flex flex-row">
+            <Image src="./images/huawei.jpg" alt="samsung logo" className="mr-2" />
             <span>
               <h6 className="mb-0">Huawei</h6>
               <p>Company · Telecomunications</p>
@@ -29,11 +26,8 @@ const RightSidebar = () => {
               </Button>
             </span>
           </div>
-          <div className="d-flex flex-row mb-2">
-            <i
-              className="bi bi-circle-fill mr-3"
-              style={{ fontSize: "2rem" }}
-            ></i>
+          <div className="d-flex flex-row my-3">
+            <Image src="./images/woman.png" alt="samsung logo" className="mr-2" />
             <span>
               <h6 className="mb-0">Natalia Gutiérrez Botero</h6>
               <p>Gerente de RRHH,Director de RRHH ...</p>
@@ -46,10 +40,7 @@ const RightSidebar = () => {
             </span>
           </div>
           <div className="d-flex flex-row">
-            <i
-              className="bi bi-circle-fill mr-3"
-              style={{ fontSize: "2rem" }}
-            ></i>
+            <Image src="./images/samsung.png" alt="samsung logo" className="mr-2" />
             <span>
               <h6 className="mb-0">Samsung Electronics</h6>
               <p>Company · Consumer Electronics</p>
@@ -70,7 +61,7 @@ const RightSidebar = () => {
         </Card.Footer>
       </Card>
       <Card id="right-sidebar" className="mt-2">
-        <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ53UK7awzablMA4_9zwAs-M1GfWpSGD6k-OQ&usqp=CAU" alt="linkedin adv" />
+        <Card.Img variant="top" src="./images/linkedin.jpg" alt="linkedin adv" />
       </Card>
     </>
   );
