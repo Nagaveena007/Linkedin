@@ -47,13 +47,19 @@ const SinglePost = ({
                 }
               >
                 <Card.Title>
-                  {pathname === "/" ? post.user.name : name}{" "}
-                  {pathname === "/" ? post.user.surname : surname} &#8226;{" "}
+                  {pathname === "/" ? post.user.name : name}
+                  {pathname === "/" ? post.user.surname : surname} &#8226;
                 </Card.Title>
               </Link>
-              <Link>
+              <Link
+                to={
+                  pathname === "/"
+                    ? `/profile/${post.user._id}`
+                    : `/profile/${id}`
+                }
+              >
                 <Card.Subtitle className="mb-2 text-muted">
-                  {post.user.title}
+                  {pathname === "/" ? post.user.title : title}
                 </Card.Subtitle>
               </Link>
             </span>
@@ -65,7 +71,13 @@ const SinglePost = ({
               ></i>
             )}
           </div>
-          <Card.Text>{post.text}</Card.Text>
+          <Link
+            to={
+              pathname === "/" ? `/profile/${post.user._id}` : `/profile/${id}`
+            }
+          >
+            <Card.Text>{pathname === "/" ? post.text : text}</Card.Text>
+          </Link>
         </Card.Body>
       </Card>
 

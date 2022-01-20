@@ -9,6 +9,7 @@ import { Col } from "react-bootstrap";
 import NewsFeed from "./NewsFeed";
 import StartAPost from "../FeaturedPosts/StartAPost";
 import UserPosts from "./UserPosts";
+import NewPost from "./NewPost";
 const DefaultFeeds = ({ userProfile, setUserProfile }) => {
   const [postsAdded, setPostsAdded] = useState(0);
 
@@ -16,8 +17,9 @@ const DefaultFeeds = ({ userProfile, setUserProfile }) => {
     <>
       <Col className="home__wrap pr-5">
         <StartAPost />
-        <NewsFeed userProfile={userProfile} setUserProfile={setUserProfile} />
+
         <UserPosts postsAdded={postsAdded} />
+        <NewsFeed userProfile={userProfile} setUserProfile={setUserProfile} />
       </Col>
       <div id="sidebar" className="pl-5 ml-5 mt-4">
         <Sidebar />

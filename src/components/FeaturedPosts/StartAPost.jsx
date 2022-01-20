@@ -40,13 +40,12 @@ import {
 } from "react-bootstrap";
 import { useState } from "react";
 const StartAPost = () => {
-  const [modalShow, setModalShow] = useState(false);
   const [newPost, setNewPost] = useState({
     text: " ",
   });
+  const [modalShow, setModalShow] = useState(false);
 
   const createNewPost = async (e) => {
-    console.log(e);
     e.preventDefault();
 
     const newPostToSend = {
@@ -61,7 +60,8 @@ const StartAPost = () => {
           body: JSON.stringify(newPostToSend),
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU2YjIwOWMyYzE4ODAwMTVhYjk0YTEiLCJpYXQiOjE2NDI1MDg4MTAsImV4cCI6MTY0MzcxODQxMH0.JAfyKqdxjSdTol524cwYXpcd7LDhynRxo5EuWv9T7Ac`,
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU2ODM3OWMyYzE4ODAwMTVhYjk0OWMiLCJpYXQiOjE2NDI0OTY4OTAsImV4cCI6MTY0MzcwNjQ5MH0.T6x0XrVZuqOI5X7c5AEoxgXRux2f4Q_UHHjEvuutJCc
+            `,
           },
         }
       );
@@ -132,10 +132,16 @@ const StartAPost = () => {
                     placeholder="What do you want to talk about?"
                     rows={5}
                     style={{ border: "transparent", width: "65vh" }}
+                    value={newPost.text}
+                    onChange={(e) =>
+                      setNewPost({
+                        text: e.currentTarget.value,
+                      })
+                    }
                   />
                 </Form.Group>
                 <div className="d-flex">
-                  <Button variant="light" className="hashtag__btn">
+                  <Button type="" variant="light" className="hashtag__btn">
                     Add hashtag
                   </Button>
                   <Button className="post__btn " variant="light" type="submit">
@@ -182,11 +188,11 @@ const StartAPost = () => {
             <span className="d-flex flex-column ml-3">
               <Card.Title>
                 <div style={{ marginTop: "1vh" }} className="">
-                  <Container className="search__container__onscroll ">
-                    <Row
-                      onClick={() => setModalShow(true)}
-                      className="search__bar__elements__row"
-                    >
+                  <Container
+                    onClick={() => setModalShow(true)}
+                    className="search__container__onscroll "
+                  >
+                    <Row className="search__bar__elements__row">
                       <small className="">Start a post</small>
                     </Row>
                   </Container>

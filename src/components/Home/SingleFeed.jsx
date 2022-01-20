@@ -12,8 +12,8 @@ const SingleFeed = (props) => {
             <Image
               src={props.image}
               alt="profile picture of"
-              {...props.name}
-              {...props.surname}
+              /*  {...props.name}
+              {...props.surname} */
             />
             <span className="d-flex flex-column ml-3">
               <Card.Title>

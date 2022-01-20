@@ -42,7 +42,7 @@ const NewsFeed = ({ userProfile, setUserProfile }) => {
         .filter((post) => post.user)
         .slice(0, 6)
         .map((post) => (
-          <SinglePost
+          <SingleFeed
             image={post.user.image}
             name={post.user.name}
             surname={post.user.surname}

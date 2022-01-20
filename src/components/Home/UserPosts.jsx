@@ -6,8 +6,6 @@ import SingleFeed from "./SingleFeed";
 import SinglePost from "./SinglePost";
 const UserPosts = ({ postsAdded }) => {
   const [posts, setPosts] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [randomNumber, setRandomNumber] = useState(0);
   const [numOfPosts, setNumOfPosts] = useState(20);
 
   const [postsChanged, setPostsChanged] = useState(0);
@@ -39,10 +37,10 @@ const UserPosts = ({ postsAdded }) => {
     }
   };
 
-  useEffect(() => {
+  /*  useEffect(() => {
     fetchPostDetails();
   }, [selectedPost]);
-
+ */
   const handleEdit = (id) => {
     setSelectedPost(id);
     handleShowModal();
@@ -62,7 +60,6 @@ const UserPosts = ({ postsAdded }) => {
       );
 
       if (response.ok) {
-        setPostsChanged((count) => count + 1);
         handleCloseModal();
       }
     } catch (error) {
@@ -86,10 +83,8 @@ const UserPosts = ({ postsAdded }) => {
           },
         }
       );
-      if (response.status === 401)
-        alert("You Can Only Edit Or Delete Your Own Posts");
+      if (response.status === 401) alert("you can not delete others posts");
       if (response.ok) {
-        setPostsChanged((count) => count + 1);
         handleCloseModal();
       }
     } catch (error) {
@@ -111,9 +106,6 @@ const UserPosts = ({ postsAdded }) => {
       if (response.ok) {
         const data = await response.json();
         setPosts(data);
-        setRandomNumber(Math.floor(Math.random() * (data.length - 100)));
-        setIsLoading(false);
-        console.log(data);
       } else {
         console.error("Fetch Failed");
       }
