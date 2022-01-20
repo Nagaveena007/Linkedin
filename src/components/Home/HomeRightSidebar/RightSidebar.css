@@ -1,4 +1,5 @@
-#right-sidebar {
+#right-sidebar,
+#side-footer {
   position: relative;
   width: 250px;
   top: 25px;
@@ -57,4 +58,20 @@
   height: 70px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+#side-footer a {
+  color: #868686;
+  text-transform: capitalize;
+  font-size: 0.7rem;
+}
+
+#side-footer p {
+  color: #434343;
+  text-transform: capitalize;
+  font-size: 0.7rem;
+}
+
+#side-footer #linkedin-logo {
+  height: 14px;
 }
