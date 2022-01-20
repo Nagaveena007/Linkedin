@@ -88,3 +88,13 @@
 #interests .card-footer p {
   color: #727272;
 }
+
+#interests img {
+  width: 48px;
+  height: 48px;
+}
+
+#interests span > p {
+  color: #727272;
+  font-size: 0.9rem;
+}

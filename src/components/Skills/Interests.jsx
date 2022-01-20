@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap";
+import { Card, Image } from "react-bootstrap";
 import "./Skills.css";
 
 
@@ -15,19 +15,19 @@ const Interests = () => {
             <p className="mr-3">Companies</p>
             <p>School</p>
           </Card.Text>
-          <div className="d-flex flex-row justify-content-around mt-2 border-bottom">
-            <div className="d-flex flex-row">
-              <i className="bi bi-image mr-2" style={{fontSize:"2rem"}}></i>
-              <span>
-                <p className="mb-0">LOREM IPSUM 1</p>
-                <p>subtitle</p>
+          <div className="d-flex flex-row  mt-2 border-bottom">
+            <div className="d-flex flex-row mr-5">
+              <Image src="images/interest/startup.png" alt="startup logo" />
+              <span className="pl-3 d-flex flex-column justify-content-center">
+                <h6 className="mb-0">STARTUPS WITHOUT BORDERS</h6>
+                <p>6,023 followers</p>
               </span>
             </div>
-            <div className="d-flex flex-row">
-              <i className="bi bi-image mr-2" style={{fontSize:"2rem"}}></i>
-              <span>
-                <p className="mb-0">LOREM IPSUM 2</p>
-                <p>subtitle</p>
+            <div className="d-flex flex-row ml-5">
+              <Image src="images/interest/strive.png" alt="startup logo" />
+              <span className="pl-3 d-flex flex-column justify-content-center">
+                <h6 className="mb-0">STRIVE SCHOOL</h6>
+                <p>2,242 followers</p>
               </span>
             </div>
           </div>
