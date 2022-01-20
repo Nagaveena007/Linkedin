@@ -37,10 +37,10 @@ const UserPosts = ({ postsAdded }) => {
     }
   };
 
-  /*  useEffect(() => {
+  useEffect(() => {
     fetchPostDetails();
   }, [selectedPost]);
- */
+
   const handleEdit = (id) => {
     setSelectedPost(id);
     handleShowModal();
