@@ -21,7 +21,7 @@ const Profile = ({ userProfile, setUserProfile }) => {
       <Activity />
       {/*       <Experience userProfile={userProfile} setUserProfile={setUserProfile} />
        */}{" "}
-       <Experiences  userProfile={userProfile} setUserProfile={setUserProfile}/> 
+       {/* <Experiences  userProfile={userProfile} setUserProfile={setUserProfile}/>  */}
       <Education />
       <Licenses />
       <Skills />

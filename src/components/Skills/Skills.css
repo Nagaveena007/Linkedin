@@ -46,3 +46,12 @@
   padding-bottom: 8px;
   border-bottom: 1px solid #e0dfdf;
 }
+
+#skills .card-footer {
+  background: none;
+  border-top: none;
+}
+
+#skills .card-footer p {
+  color: #727272;
+}
