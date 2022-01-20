@@ -1,5 +1,6 @@
 #skills .card-title,
-#courses .card-title {
+#courses .card-title,
+#interests .card-title {
   font-weight: bold;
   font-size: 1rem;
 }
@@ -57,15 +58,33 @@
   border-bottom: 1px solid #e0dfdf;
 }
 
+#interests .card-text,
+#interests .border-bottom {
+  border-bottom: 1px solid #e0dfdf;
+}
+
+#interests .card-text > p {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #727272;
+  padding-bottom: 0px;
+}
+
+#interests .card-text > p:first-child {
+  color: green;
+}
+
 #courses .card-text > p:last-of-type {
   border: none;
 }
 
-#skills .card-footer {
+#skills .card-footer,
+#interests .card-footer {
   background: none;
   border-top: none;
 }
 
-#skills .card-footer p {
+#skills .card-footer p,
+#interests .card-footer p {
   color: #727272;
 }

@@ -10,6 +10,7 @@ import "./Profile.css";
 import UsereProfile from "./UsereProfile";
 import Skills from "../Skills/Skills"
 import Courses from "../Skills/Courses"
+import Interests from "../Skills/Interests"
 
 const Profile = ({ userProfile, setUserProfile }) => {
   const params = useParams();
@@ -27,6 +28,7 @@ const Profile = ({ userProfile, setUserProfile }) => {
       <Licenses />
       <Skills />
       <Courses />
+      <Interests  />
     </Col>
   );
 };
