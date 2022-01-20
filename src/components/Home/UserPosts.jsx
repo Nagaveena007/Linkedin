@@ -58,6 +58,7 @@ const UserPosts = ({ postsAdded }) => {
           },
         }
       );
+      if (response.status === 401) alert("You Can not Delete others Posts");
 
       if (response.ok) {
         handleCloseModal();
@@ -83,7 +84,7 @@ const UserPosts = ({ postsAdded }) => {
           },
         }
       );
-      if (response.status === 401) alert("you can not delete others posts");
+      if (response.status === 401) alert("you can not update others posts");
       if (response.ok) {
         handleCloseModal();
       }

@@ -10,7 +10,7 @@ import {
   JournalCheck,
   MusicPlayer,
 } from "react-bootstrap-icons";
-import "./StartAPost.css";
+import "../FeaturedPosts/StartAPost.css";
 import { BiWorld, BiMessageRoundedDetail } from "react-icons/bi";
 
 import { BsThreeDots } from "react-icons/bs";
@@ -40,6 +40,10 @@ import {
 } from "react-bootstrap";
 import { useState } from "react";
 const StartAPost = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   const [newPost, setNewPost] = useState({
     text: " ",
   });
@@ -79,7 +83,7 @@ const StartAPost = () => {
     }
   };
 
-  function MydModalWithGrid(props) {
+  /*  function MydModalWithGrid(props) {
     return (
       <Modal {...props} aria-labelledby="contained-modal-title-vcenter">
         <Modal.Header closeButton>
@@ -177,8 +181,9 @@ const StartAPost = () => {
           </Row>
         </Modal.Footer>
       </Modal>
+      
     );
-  }
+  } */
   return (
     <>
       <Card className="feed">
@@ -189,7 +194,7 @@ const StartAPost = () => {
               <Card.Title>
                 <div style={{ marginTop: "1vh" }} className="">
                   <Container
-                    onClick={() => setModalShow(true)}
+                    onClick={handleShow}
                     className="search__container__onscroll "
                   >
                     <Row className="search__bar__elements__row">
@@ -230,11 +235,110 @@ const StartAPost = () => {
           </div>
         </Card.Body>
       </Card>
+      {/*   <Button variant="primary" onClick={handleShow}>
+        Launch demo modal
+      </Button> */}
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <span id="modal__title">Create a post</span>
+        </Modal.Header>
+        <Modal.Body className="show-grid">
+          <Container>
+            <Row>
+              <Card.Body>
+                <div className="d-flex flex-row">
+                  <Image
+                    src="profile-photo.jpg"
+                    alt=""
+                    className="start__img"
+                  />
+                  <span className="d-flex flex-column ml-3">
+                    <Card.Text className="">Nagaveena Hallikeri</Card.Text>
+                    <Card.Subtitle className="text-muted">
+                      <Button variant="light" className="anyone__btn">
+                        <BiWorld className="mr-2 text-muted" />
+                        Anyone
+                        <Dropdown>
+                          <Dropdown.Toggle
+                            variant="light"
+                            split
+                            className="dropdown__btn"
+                            id="dropdown-split-basic"
+                          />
 
+                          <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1">
+                              Action
+                            </Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">
+                              Another action
+                            </Dropdown.Item>
+                          </Dropdown.Menu>
+                        </Dropdown>
+                      </Button>
+                    </Card.Subtitle>
+                  </span>
+                </div>
+              </Card.Body>
+            </Row>
+            <Row>
+              <Form className="" onSubmit={createNewPost}>
+                <Form.Group controlId="exampleForm.ControlTextarea1">
+                  <Form.Control
+                    as="textarea"
+                    placeholder="What do you want to talk about?"
+                    rows={5}
+                    style={{ border: "transparent", width: "65vh" }}
+                    value={newPost.text}
+                    onChange={(e) =>
+                      setNewPost({
+                        text: e.currentTarget.value,
+                      })
+                    }
+                  />
+                </Form.Group>
+                <div className="d-flex">
+                  <Button type="" variant="light" className="hashtag__btn">
+                    Add hashtag
+                  </Button>
+                  <Button className="post__btn " variant="light" type="submit">
+                    Post
+                  </Button>
+                </div>
+              </Form>
+            </Row>
+          </Container>
+        </Modal.Body>
+        <Modal.Footer className="justify-content-around">
+          <Row className="ml-3 text-muted ">
+            <MdPhotoSizeSelectActual className="mr-3" size={23} />
+            <RiVideoFill className="mr-3" size={23} />
+            <IoDocumentText className="mr-3" size={23} />
+            <RiHandbagFill className="mr-3" size={23} />
+            <RiSettings2Fill className="mr-3" size={23} />
+            <MdPoll className="mr-3" size={23} />
+            <BsThreeDots className="mr-2" size={23} />
+            <hr />
+            <Button variant="light" className="anyone__btn__footer" style={{}}>
+              <BiMessageRoundedDetail className="mr-2 text-muted" />
+              <small>Anyone</small>
+            </Button>
+
+            <Button
+              variant="light"
+              className="close__btn ml-2"
+              onClick={handleClose}
+            >
+              Close
+            </Button>
+          </Row>
+        </Modal.Footer>
+      </Modal>
       {/*  <Button variant="primary" onClick={() => setModalShow(true)}>
         Launch modal with grid
       </Button> */}
-      <MydModalWithGrid show={modalShow} onHide={() => setModalShow(false)} />
+      {/*       <MydModalWithGrid show={modalShow} onHide={() => setModalShow(false)} />
+       */}{" "}
     </>
   );
 };

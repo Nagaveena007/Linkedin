@@ -25,7 +25,7 @@ const SinglePost = ({
   return (
     <div className="profile-sub-section p-2 my-2">
       <Card
-        style={{ width: "34rem", borderRadius: "7px", marginLeft: "8em" }}
+        style={{ width: "34rem", borderRadius: "7px", marginLeft: "11.6em" }}
         className="mb-2 "
       >
         <Card.Body>
@@ -75,9 +75,10 @@ const SinglePost = ({
             to={
               pathname === "/" ? `/profile/${post.user._id}` : `/profile/${id}`
             }
-          >
-            <Card.Text>{pathname === "/" ? post.text : text}</Card.Text>
-          </Link>
+          ></Link>
+          <Card.Text style={{ marginLeft: "4.3em", fontSize: "large" }}>
+            {pathname === "/" ? post.text : text}
+          </Card.Text>
         </Card.Body>
       </Card>
 
