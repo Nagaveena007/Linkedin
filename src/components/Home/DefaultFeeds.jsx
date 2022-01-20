@@ -4,13 +4,13 @@ import Profile from "../Profile/Profile";
 import Sidebar from "../Sidebar/Sidebar";
 import SingleFeed from "./SingleFeed";
 import NewPost from "./NewPost";
+import RightSidebar from "./HomeRightSidebar/RightSidebar";
 import "../Sidebar/Sidebar.css";
 import "./Home.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 const DefaultFeeds = ({ userProfile, setUserProfile }) => {
   const [posts, setPosts] = useState([]);
-
- 
 
   useEffect(() => {
     fetchPosts();
@@ -39,24 +39,34 @@ const DefaultFeeds = ({ userProfile, setUserProfile }) => {
     }
   };
 
-  
   return (
-    <div id="feed" className="d-flex align-items-center flex-column">
-      <NewPost />
+    <>
+      <Container>
+        <Row>
+          <Col md={10}>
+            <div id="feed" className="d-flex align-items-center flex-column">
+              <NewPost />
 
-      {posts
-        .filter((post) => post.user)
-        .map((post) => (
-          <SingleFeed
-            image={post.user.image}
-            name={post.user.name}
-            surname={post.user.surname}
-            title={post.user.title}
-            text={post.text}
-            key={post._id}
-          />
-        ))}
-    </div>
+              {posts
+                .filter((post) => post.user)
+                .map((post) => (
+                  <SingleFeed
+                    image={post.user.image}
+                    name={post.user.name}
+                    surname={post.user.surname}
+                    title={post.user.title}
+                    text={post.text}
+                    key={post._id}
+                  />
+                ))}
+            </div>
+          </Col>
+          <Col md={2}>
+            <RightSidebar />
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 };
 export default DefaultFeeds;

@@ -1,0 +1,22 @@
+#right-sidebar {
+  position: relative;
+  width: 250px;
+  top: 25px;
+  right: 170px;
+}
+
+#right-sidebar .h5 {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #434343;
+}
+
+#right-sidebar h6 {
+  font-size: 0.9rem;
+  columns: #434343;
+}
+
+#right-sidebar p {
+  font-size: 0.7rem;
+  color: #868686;
+}
