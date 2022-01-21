@@ -150,3 +150,40 @@
   justify-content: center;
   align-items: center;
 }
+
+#popover-contained {
+  top: 12px !important;
+  left: -80px !important;
+  width: 233px !important;
+}
+
+.popover {
+  border: none;
+  background: transparent;
+}
+.popover .arrow {
+  display: none;
+}
+
+#popover-contained .popover-body {
+  padding: 0;
+  border: 1px solid #b2b2b2;
+  border-radius: 25px 0 25px 25px;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+.pop-menu {
+  color: gray;
+}
+
+.pop-menu:hover {
+  text-decoration: underline !important;
+  cursor: pointer !important;
+}
