@@ -14,22 +14,22 @@ const DefaultFeeds = ({ userProfile, setUserProfile }) => {
 
   return (
     <>
-      {/*  <Col>
+      <Col md={3} style={{ marginTop: "25px", marginLeft: "75px" }}>
         <HomeLeftSidebar
           userProfile={userProfile}
           setUserProfile={setUserProfile}
         />
-      </Col> */}
+      </Col>
 
-      <Col className="home__wrap pr-5">
+      <Col className="home__wrap pr-5" style={{ marginTop: "-490px" }}>
         <StartAPost />
 
         <UserPosts postsAdded={postsAdded} />
         <NewsFeed userProfile={userProfile} setUserProfile={setUserProfile} />
       </Col>
-      <div id="sidebar" className=" mt-4">
+      <Col md={3} id="sidebar" className="" style={{ marginTop: "25px" }}>
         <RightSidebar />
-      </div>
+      </Col>
     </>
   );
 };

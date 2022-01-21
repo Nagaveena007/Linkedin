@@ -5,8 +5,13 @@ import "./StartAPost.css";
 const HomeLeftSidebar = ({ userProfile, setUserProfile }) => {
   return (
     <>
-      <Card>
+      <Card style={{ width: "18rem" }}>
         <Card.Header className="text-center" style={{ height: "3rem" }}>
+          {/*  <img
+            src="https://media-exp1.licdn.com/dms/image/C5616AQHH0RXx4UVLWQ/profile-displaybackgroundimage-shrink_350_1400/0/1638482874027?e=1648080000&v=beta&t=ubcbUCUGYkOBc5UaoLuGh2mYr4L-d1AmBJVqPUzm2eQ"
+            alt=""
+            style={{ objectFit: "contain" }}
+          /> */}
           <img
             className="profile-image-posts"
             src={userProfile?.image}

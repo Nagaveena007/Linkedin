@@ -178,3 +178,9 @@
   height: 12px;
   border-radius: 0.25rem;
 }
+.saved {
+  margin-top: 5px;
+  margin-left: 13px;
+  font-weight: 600;
+  font-size: small;
+}
