@@ -85,6 +85,7 @@
 #promoted img,
 #also-viewed img {
   width: 52px;
+  border-radius: 50%;
 }
 
 #promoted p {
