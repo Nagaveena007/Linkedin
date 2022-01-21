@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
 import { Col } from "react-bootstrap";
 import "./Sidebar.css";
 import "./alsoViewed.css";
@@ -7,7 +7,7 @@ import EditSidebox from "./EditSidebox";
 import PromotedSideBox from "./PromotedSideBox";
 import AlsoViewed from "./AlsoViewed";
 import PeopleMayKnow from "./PeopleMayKnow";
-import Learning from './Learning';
+import Learning from "./Learning";
 
 const Sidebar = () => {
   const [users, setUsers] = useState([]);
@@ -40,7 +40,7 @@ const Sidebar = () => {
   };
 
   return (
-    <Col md={2} className="offset-8 bg px-0">
+    <Col md={2} className="px-0">
       <EditSidebox />
       <PromotedSideBox />
       <AlsoViewed users={users} setUsers={setUsers} />

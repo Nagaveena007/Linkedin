@@ -2,7 +2,7 @@ import { Container, Row, Col, Image, Form } from "react-bootstrap";
 import "./FooterPart.css";
 const FooterPart = () => {
   return (
-    <Container id="footer" className="home__wrap">
+    <Container id="footer" className="">
       <Row className="pl-3 pb-2 mt-5">
         <Image src="../images/promoted/linkedinADS.png" alt="linkedin logo" />
       </Row>
