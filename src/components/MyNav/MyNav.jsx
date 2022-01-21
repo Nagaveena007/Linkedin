@@ -226,7 +226,7 @@ const MyNav = ({ userProfile, setUserProfile }) => {
                   <img
                     className="navbar-icon-container d-none d-md-block"
                     id="navbar-logo"
-                    src="https://res.cloudinary.com/dmqsfltrf/image/upload/v1642767076/linkedin/stxg2zuzewyljrsubj4o.jpg"
+                    src={userProfile.image}                    
                     alt="linkedin-logo"
                   />
                 </Link>
