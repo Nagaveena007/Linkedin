@@ -14,14 +14,14 @@ const DefaultFeeds = ({ userProfile, setUserProfile }) => {
 
   return (
     <>
-      <Col md={3} style={{ marginTop: "25px", marginLeft: "75px" }}>
+      <Col md={3} style={{ marginTop: "22px", marginLeft: "70px" }}>
         <HomeLeftSidebar
           userProfile={userProfile}
           setUserProfile={setUserProfile}
         />
       </Col>
 
-      <Col className="home__wrap pr-5" style={{ marginTop: "-490px" }}>
+      <Col className="home__wrap pr-5" style={{ marginTop: "-743px" }}>
         <StartAPost />
 
         <UserPosts postsAdded={postsAdded} />
