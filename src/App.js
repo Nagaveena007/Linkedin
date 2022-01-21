@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import DefaultFeeds from "./components/Home/DefaultFeeds";
 import NotFound from "./components/NotFound";
+import Notifications from "./components/Notification/Notifications";
 function App() {
   const [userProfile, setUserProfile] = useState({});
 
@@ -34,6 +35,16 @@ function App() {
               <Home userProfile={userProfile} setUserProfile={setUserProfile} />
             }
           />
+          <Route
+            path="/notifications"
+            element={
+              <Notifications
+                userProfile={userProfile}
+                setUserProfile={setUserProfile}
+              />
+            }
+          />
+
           <Route path="*" element={<NotFound error="Page not found" />} />
         </Routes>
       </BrowserRouter>

@@ -146,10 +146,12 @@ const MyNav = ({ userProfile, setUserProfile }) => {
               <ChatDotsFill size={22} className="navbar-icon" />
               Messaging
             </div>
-            <div className="navbar-icon-container mt-2 text-center">
-              <BellFill size={22} className="navbar-icon" />
-              Notifications
-            </div>
+            <Link to="/notifications">
+              <div className="navbar-icon-container mt-2 text-center">
+                <BellFill size={22} className="navbar-icon" />
+                Notifications
+              </div>
+            </Link>
             <OverlayTrigger
               trigger="click"
               rootClose

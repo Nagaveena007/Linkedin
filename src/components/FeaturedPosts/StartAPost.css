@@ -158,3 +158,23 @@
   align-items: center;
   margin-left: 17em;
 }
+.profile-image-posts {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.profile-image-posts2 {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+.num_post {
+  position: absolute;
+  left: 80%;
+  top: 61%;
+  color: blue;
+  background-color: lightgray;
+  margin: 0.25rem 0;
+  height: 12px;
+  border-radius: 0.25rem;
+}

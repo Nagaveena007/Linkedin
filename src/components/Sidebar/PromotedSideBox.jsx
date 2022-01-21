@@ -31,7 +31,8 @@ const PromotedSideBox = () => {
             <Card.Link href="#">Reactivate now</Card.Link>
 
             <Card.Text className="d-flex flex-row align-items-center">
-              Continue learning your Linkedin. Learning plan today. Cancel anytime.
+              Continue learning your Linkedin. Learning plan today. Cancel
+              anytime.
               <i className="bi bi-chevron-compact-right"></i>
             </Card.Text>
           </Card.Body>
@@ -45,7 +46,8 @@ const PromotedSideBox = () => {
             <Card.Link href="#">Invitation from Linkedin</Card.Link>
 
             <Card.Text className="d-flex flex-row align-items-center">
-              Place ads on Linkedin. Acquire new customers from your business. Try it now.
+              Place ads on Linkedin. Acquire new customers from your business.
+              Try it now.
               <i className="bi bi-chevron-compact-right"></i>
             </Card.Text>
           </Card.Body>

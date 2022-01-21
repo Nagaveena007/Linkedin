@@ -19,6 +19,7 @@ const Profile = ({ userProfile, setUserProfile }) => {
   return (
     <>
       <Col className="home__wrap pr-5">
+        
         <UsereProfile
           userProfile={userProfile}
           setUserProfile={setUserProfile}

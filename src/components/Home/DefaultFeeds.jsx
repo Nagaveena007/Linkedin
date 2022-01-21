@@ -8,11 +8,19 @@ import NewsFeed from "./NewsFeed";
 import StartAPost from "../FeaturedPosts/StartAPost";
 import UserPosts from "./UserPosts";
 import RightSidebar from "./HomeRightSidebar/RightSidebar";
+import HomeLeftSidebar from "../FeaturedPosts/HomeLeftSidebar";
 const DefaultFeeds = ({ userProfile, setUserProfile }) => {
   const [postsAdded, setPostsAdded] = useState(0);
 
   return (
     <>
+      {/*  <Col>
+        <HomeLeftSidebar
+          userProfile={userProfile}
+          setUserProfile={setUserProfile}
+        />
+      </Col> */}
+
       <Col className="home__wrap pr-5">
         <StartAPost />
 
