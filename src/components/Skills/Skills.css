@@ -1,0 +1,100 @@
+#skills .card-title,
+#courses .card-title,
+#interests .card-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#skills .title,
+#courses .title {
+  color: #696969;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+#skills i,
+#courses i {
+  color: rgb(46, 46, 46);
+  font-size: 1rem;
+}
+
+#skills .title:hover,
+#courses .title:hover {
+  cursor: pointer;
+  background-color: #9b9b9b2c;
+  border-radius: 5px;
+}
+
+#skills i:hover,
+#courses i:hover {
+  cursor: pointer;
+  background-color: #9b9b9b2c;
+  border-radius: 100%;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+#skills button {
+  border-radius: 25px;
+  border-color: #0a66c2;
+  color: #0a66c2;
+  font-weight: bold;
+  background-color: transparent;
+  font-size: 0.8rem;
+}
+
+#skills button:hover {
+  cursor: pointer;
+  background-color: #0a66c231;
+  border: 2px solid;
+}
+
+#skills .card-text > p,
+#courses .card-text > p {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #727272;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e0dfdf;
+}
+
+#interests .card-text,
+#interests .border-bottom {
+  border-bottom: 1px solid #e0dfdf;
+}
+
+#interests .card-text > p {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #727272;
+  padding-bottom: 0px;
+}
+
+#interests .card-text > p:first-child {
+  color: green;
+}
+
+#courses .card-text > p:last-of-type {
+  border: none;
+}
+
+#skills .card-footer,
+#interests .card-footer {
+  background: none;
+  border-top: none;
+}
+
+#skills .card-footer p,
+#interests .card-footer p {
+  color: #727272;
+}
+
+#interests img {
+  width: 48px;
+  height: 48px;
+}
+
+#interests span > p {
+  color: #727272;
+  font-size: 0.9rem;
+}
