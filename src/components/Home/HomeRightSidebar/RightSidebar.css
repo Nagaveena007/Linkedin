@@ -3,10 +3,12 @@
   position: relative;
   width: 250px;
 
-  top: -12px;
+  top: -2px;
   right: 86px;
 }
-
+.right__side__footer {
+  margin-left: 35px;
+}
 #right-sidebar .h5 {
   font-weight: bold;
   font-size: 0.9rem;

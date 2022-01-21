@@ -80,7 +80,7 @@ const RightSidebar = () => {
         />
       </Card>
       <div id="side-footer" className="text-center mt-3">
-        <Row>
+        <Row className="right__side__footer">
           <Col xs={12}>
             <a href=""> about </a>
             <a href="" className="mx-2">
@@ -114,7 +114,12 @@ const RightSidebar = () => {
             </a>{" "}
           </Col>
           <Col xs={12} className="d-flex flex-row mt-3 justify-content-center">
-          <Image id="linkedin-logo" src="../images/promoted/linkedinADS.png" alt="linkedin logo" className="mr-2"/>
+            <Image
+              id="linkedin-logo"
+              src="../images/promoted/linkedinADS.png"
+              alt="linkedin logo"
+              className="mr-2"
+            />
             <p>linkedin corporation &copy; {new Date().getFullYear()}</p>
           </Col>
         </Row>
