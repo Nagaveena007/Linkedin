@@ -80,7 +80,10 @@ const MyNav = ({ userProfile, setUserProfile }) => {
             </div>
           </div>
           <div id="modal-view-profile-btn-container">
-            <Link to={`/profile/${userProfile._id && userProfile._id}`} className="width-100">
+            <Link
+              to={`/profile/${userProfile._id && userProfile._id}`}
+              className="width-100"
+            >
               <Button
                 id="modal-view-profile-btn"
                 variant="outline-primary"
@@ -159,10 +162,12 @@ const MyNav = ({ userProfile, setUserProfile }) => {
                   <BriefcaseFill size={22} className="navbar-icon" />
                   Jobs
                 </div>
+                {/*  <Link to="/messages"> */}
                 <div className="navbar-icon-container mt-2 text-center">
                   <ChatDotsFill size={22} className="navbar-icon" />
                   Messaging
                 </div>
+                {/*   </Link> */}
                 <Link to="/notifications">
                   <div className="navbar-icon-container mt-2 text-center">
                     <BellFill size={22} className="navbar-icon" />

@@ -43,7 +43,8 @@ function App() {
               />
             }
           />
-          {/*   <Route path="/messages" element={<Messages />} />{" "} */}
+          {/*           <Route path="/messages" element={<Messages />} />{" "}
+           */}{" "}
           <Route path="*" element={<NotFound error="Page not found" />} />
         </Routes>
       </BrowserRouter>
