@@ -100,44 +100,53 @@
   border-radius: 50%;
 }
 .modal-profile-container > div > img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
-
-#popover-contained {
-  top: 12px !important;
-  left: -80px !important;
-  width: 233px !important;
+#nav__onscroll {
+  display: flex;
+  flex-direction: column;
 }
-
-.popover {
-  border: none;
-  background: transparent;
+.nav__scrl {
+  display: flex;
+  flex-direction: row;
 }
-.popover .arrow {
-  display: none;
-}
+.more__btn {
+  border-radius: 1.3rem;
+  border: 2px solid grey;
+  background-color: transparent;
+  height: 35px;
+  font-weight: 600;
 
-#popover-contained .popover-body {
-  padding: 0;
-  border: 1px solid #b2b2b2;
-  border-radius: 25px 0 25px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
 }
-
-.width-100 {
-  width: 100%;
+.add__profile__btn {
+  border-radius: 1.3rem;
+  border: 2px solid #0a66c2;
+  color: #0a66c2;
+  font-weight: 600;
+  background-color: transparent;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
+.open__to__btn {
+  border-radius: 1.3rem;
+  border: 2px solid #0a66c2;
+  background-color: #0a66c2;
+  color: white;
+  font-weight: 600;
 
-h5 {
-  font-size: 1rem;
-}
-
-.pop-menu {
-  color: gray;
-}
-
-.pop-menu:hover {
-  text-decoration: underline;
-  cursor: pointer;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

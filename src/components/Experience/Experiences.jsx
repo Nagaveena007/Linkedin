@@ -6,6 +6,7 @@ import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { PencilFill, PlusLg } from "react-bootstrap-icons";
+import { IoSend } from "react-icons/io5";
 
 import SingleExperience from "./SingleExperience";
 
@@ -104,19 +105,12 @@ const Experiences = () => {
           borderRadius: "9px",
         }}
       >
-        <span className="d-flex flex-row">
-          <h5 className="title__activity mb-4">Experience</h5>
-          <div className="d-flex mr-auto" style={{ marginLeft: "40em" }}>
-          <PlusLg size={26} id="" className="mt-4 mr-4" />
-          <PencilFill
-            size={20}
-            id=""
-            className=""
-            style={{ marginTop: "1.7em" }}
-          />
-        </div>
-        </span>
-
+        <h5 className="title__activity mb-4">Experience</h5>
+        <PlusLg
+          size={26}
+          onClick={showAddExperience}
+          style={{ marginLeft: "42em" }}
+        />
         {experiences.map(
           ({
             company,
@@ -241,7 +235,7 @@ const Experiences = () => {
             </Form.Group>
 
             <Button variant="success" type="submit">
-              Add
+              <IoSend size={26} />
             </Button>
           </Form>
         </Modal.Body>

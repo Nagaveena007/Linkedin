@@ -6,7 +6,9 @@ import { useParams } from "react-router";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { RiDeleteBin6Line } from "react-icons/ri";
 
+import { IoSend } from "react-icons/io5";
 const SingleExperience = ({
   company,
   id,
@@ -125,10 +127,10 @@ const SingleExperience = ({
   };
   return (
     <>
-      <div style={{ marginLeft: "12px", marginTop: "12px" }}>
+      <div style={{ marginLeft: "12px" }}>
         <div className="col-md-1 mr-sm-2">
           <PencilFill
-            style={{ marginLeft: "42em", marginBottom: "0em" }}
+            style={{ marginLeft: "42em", marginBottom: "3em" }}
             size={20}
             id="pencil-icon-open-edit-form"
             onClick={() => {
@@ -244,10 +246,10 @@ const SingleExperience = ({
                 className="mr-4"
                 onClick={deleteExperience}
               >
-                Delete
+                <RiDeleteBin6Line size={26} />
               </Button>
               <Button variant="success" type="submit">
-                Save
+                <IoSend size={26} />
               </Button>
             </div>
           </Form>
