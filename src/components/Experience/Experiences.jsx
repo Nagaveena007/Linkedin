@@ -6,7 +6,6 @@ import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { PencilFill, PlusLg } from "react-bootstrap-icons";
-import { IoSend } from "react-icons/io5";
 
 import SingleExperience from "./SingleExperience";
 
@@ -242,7 +241,7 @@ const Experiences = () => {
             </Form.Group>
 
             <Button variant="success" type="submit">
-              <IoSend size={26} />
+              Add
             </Button>
           </Form>
         </Modal.Body>

@@ -6,9 +6,7 @@ import { useParams } from "react-router";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { RiDeleteBin6Line } from "react-icons/ri";
 
-import { IoSend } from "react-icons/io5";
 const SingleExperience = ({
   company,
   id,
@@ -246,10 +244,10 @@ const SingleExperience = ({
                 className="mr-4"
                 onClick={deleteExperience}
               >
-                <RiDeleteBin6Line size={26} />
+                Delete
               </Button>
               <Button variant="success" type="submit">
-                <IoSend size={26} />
+                Save
               </Button>
             </div>
           </Form>
