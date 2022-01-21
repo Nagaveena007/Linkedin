@@ -1,4 +1,5 @@
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import { PencilFill, PlusLg } from "react-bootstrap-icons";
 import "./Skills.css";
 
 const Courses = () => {
@@ -9,8 +10,8 @@ const Courses = () => {
           <div className="d-flex flex-row">
             <Card.Title>Courses</Card.Title>
             <span className="d-flex flex-row ml-auto">
-              <i class="bi bi-plus-lg p-2"></i>
-              <i class="bi bi-pencil ml-3 p-2"></i>
+              <PlusLg size={26} className="mt-1 mr-4" />
+              <PencilFill size={20} style={{ marginTop: ".5em" }} />
             </span>
           </div>
 

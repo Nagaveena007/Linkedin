@@ -10,16 +10,18 @@ const Education = () => {
         borderRadius: "9px",
       }}
     >
-      <h5 className="title__activity mb-4">Education</h5>
-      <div className="d-flex mr-auto" style={{ marginLeft: "42em" }}>
-        <PlusLg size={26} id="" className="mt-4 mr-4" />
-        <PencilFill
-          size={20}
-          id=""
-          className=""
-          style={{ marginTop: "1.7em" }}
-        />
-      </div>
+      <span className="d-flex flex-row">
+        <h5 className="title__activity mb-4">Education</h5>
+        <div className="d-flex mr-auto" style={{ marginLeft: "40em" }}>
+          <PlusLg size={26} id="" className="mt-4 mr-4" />
+          <PencilFill
+            size={20}
+            id=""
+            className=""
+            style={{ marginTop: "1.7em" }}
+          />
+        </div>
+      </span>
 
       <div style={{ marginLeft: "12px" }}>
         <div className="row">

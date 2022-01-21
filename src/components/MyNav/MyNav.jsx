@@ -68,7 +68,7 @@ const MyNav = ({ userProfile, setUserProfile }) => {
             </div>
           </div>
           <div id="modal-view-profile-btn-container">
-            <Link to={`/profile/${userProfile._id && userProfile._id}`}>
+            <Link to={`/profile/${userProfile._id && userProfile._id}`} className="width-100">
               <Button
                 id="modal-view-profile-btn"
                 variant="outline-primary"
@@ -81,17 +81,17 @@ const MyNav = ({ userProfile, setUserProfile }) => {
         </ListGroupItem>
         <ListGroup.Item>
           <h5>Account</h5>
-          <p>Settings &amp; Privacy</p>
-          <p>Help</p>
-          <p>Language</p>
+          <p className="my-0 pop-menu">Settings &amp; Privacy</p>
+          <p className="my-1 pop-menu">Help</p>
+          <p className="my-0 pop-menu">Language</p>
         </ListGroup.Item>
         <ListGroup.Item>
           <h5>Manage</h5>
-          <p>Posts &amp; Activity</p>
-          <p>Job Posting Account</p>
+          <p className="my-0 pop-menu">Posts &amp; Activity</p>
+          <p className="mt-1 mb-0 pop-menu">Job Posting Account</p>
         </ListGroup.Item>
         <ListGroup.Item>
-          <p>Sign Out</p>
+          <p className="my-0 pop-menu">Sign Out</p>
         </ListGroup.Item>
       </Popover.Content>
     </Popover>

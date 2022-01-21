@@ -125,10 +125,10 @@ const SingleExperience = ({
   };
   return (
     <>
-      <div style={{ marginLeft: "12px" }}>
+      <div style={{ marginLeft: "12px", marginTop: "12px" }}>
         <div className="col-md-1 mr-sm-2">
           <PencilFill
-            style={{ marginLeft: "42em", marginBottom: "3em" }}
+            style={{ marginLeft: "42em", marginBottom: "0em" }}
             size={20}
             id="pencil-icon-open-edit-form"
             onClick={() => {

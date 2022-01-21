@@ -10,16 +10,7 @@
   --links-color: #5894d0;
   --font: "Roboto", sans-serif;
 }
-/* .sidebar__wrap {
-  height: calc(100vh - 100px);
-  width: 300px;
-  margin-top: 3vh;
-  right: 0;
-  margin-left: 150vh;
-} */
-/* .bg {
-  background-color: var(--bg-color);
-} */
+
 #sidebar * {
   font-family: var(--font);
   letter-spacing: 0.03rem;
@@ -94,6 +85,7 @@
 #promoted img,
 #also-viewed img {
   width: 52px;
+  border-radius: 50%;
 }
 
 #promoted p {
