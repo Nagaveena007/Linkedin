@@ -28,7 +28,6 @@ function App() {
             }
           />
           <Route path="/feed/post/:postId" element={<DefaultFeeds />} />
-
           <Route
             path="/profile/:id"
             element={
@@ -44,7 +43,7 @@ function App() {
               />
             }
           />
-
+          {/*   <Route path="/messages" element={<Messages />} />{" "} */}
           <Route path="*" element={<NotFound error="Page not found" />} />
         </Routes>
       </BrowserRouter>

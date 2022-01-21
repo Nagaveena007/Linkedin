@@ -21,7 +21,7 @@ const DefaultFeeds = ({ userProfile, setUserProfile }) => {
         />
       </Col>
 
-      <Col className="home__wrap pr-5" style={{ marginTop: "-743px" }}>
+      <Col className="home__wrap pr-5" style={{ marginTop: "-701px" }}>
         <StartAPost />
 
         <UserPosts postsAdded={postsAdded} />

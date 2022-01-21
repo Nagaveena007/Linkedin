@@ -30,12 +30,13 @@ const HomeLeftSidebar = ({ userProfile, setUserProfile }) => {
               <p className="pl-3 pt-1 mt-2 text_muted">
                 Who viewed your profile
               </p>
-              <p className="num_prof">170</p>
+              <p className="num_prof"></p>
             </div>
+
             <div classNamed="d-flex">
               <p className="pl-3 pt-1 text_muted ">Views of your post</p>
             </div>
-            <p className="num_post">574</p>
+            <p className="num_post mt-2">574</p>
           </ListGroup>
           <ListGroup variant="flush">
             <div classNamed="d-flex">

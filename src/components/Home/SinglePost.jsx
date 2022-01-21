@@ -80,6 +80,37 @@ const SinglePost = ({
             {pathname === "/" ? post.text : text}
           </Card.Text>
         </Card.Body>
+        <hr className="my-1" />
+        <Row className="text-muted post-actions justify-content-center">
+          <Col
+            xs="2"
+            className="d-flex align-items-center justify-content-center p-2 mx-3 rounded"
+          >
+            <i className="bi bi-hand-thumbs-up"></i>
+            <p className="mb-0 ml-2 text-primary"></p>
+          </Col>
+          <Col
+            xs="2"
+            className="d-flex align-items-center justify-content-center p-2 mx-3 rounded"
+          >
+            <i className="bi bi-chat-right-text"></i>
+            <p className="mb-0 ml-2">Comment</p>
+          </Col>
+          <Col
+            xs="2"
+            className="d-flex align-items-center justify-content-center p-2 mx-3 rounded"
+          >
+            <i className="bi bi-arrow-90deg-right"></i>
+            <p className="mb-0 ml-2">Share</p>
+          </Col>
+          <Col
+            xs="2"
+            className="d-flex align-items-center justify-content-center p-2 mx-3 rounded"
+          >
+            <i className="bi bi-send"></i>
+            <p className="mb-0 ml-2">Send</p>
+          </Col>
+        </Row>
       </Card>
 
       <Modal show={show} onHide={handleClose}>
