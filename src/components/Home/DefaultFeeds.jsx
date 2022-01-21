@@ -7,6 +7,7 @@ import { Col } from "react-bootstrap";
 import NewsFeed from "./NewsFeed";
 import StartAPost from "../FeaturedPosts/StartAPost";
 import UserPosts from "./UserPosts";
+import RightSidebar from "./HomeRightSidebar/RightSidebar";
 const DefaultFeeds = ({ userProfile, setUserProfile }) => {
   const [postsAdded, setPostsAdded] = useState(0);
 
@@ -19,7 +20,7 @@ const DefaultFeeds = ({ userProfile, setUserProfile }) => {
         <NewsFeed userProfile={userProfile} setUserProfile={setUserProfile} />
       </Col>
       <div id="sidebar" className=" mt-4">
-        <Sidebar />
+        <RightSidebar />
       </div>
     </>
   );
