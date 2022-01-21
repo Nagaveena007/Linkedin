@@ -1,7 +1,6 @@
 import { Card, Image } from "react-bootstrap";
 import "./Skills.css";
 
-
 const Interests = () => {
   return (
     <>

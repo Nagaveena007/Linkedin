@@ -1,7 +1,6 @@
 import { Card, Button } from "react-bootstrap";
 import "./Skills.css";
 
-
 const Courses = () => {
   return (
     <>
