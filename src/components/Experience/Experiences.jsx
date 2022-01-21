@@ -108,13 +108,13 @@ const Experiences = () => {
         <span className="d-flex flex-row mb-3">
           <h5 className="title__activity mb-4">Experience</h5>
           <div className="d-flex mr-auto" style={{ marginLeft: "35em" }}>
-            <PlusLg size={26} id="" className="mt-4 mr-4" />
-            <PencilFill
-              size={20}
+            <PlusLg
+              size={26}
               id=""
-              className=""
-              style={{ marginTop: "1.7em" }}
+              className="mt-4 mr-4"
+              onClick={showAddExperience}
             />
+            
           </div>
         </span>
 
