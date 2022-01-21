@@ -12,7 +12,7 @@ const Education = () => {
     >
       <span className="d-flex flex-row">
         <h5 className="title__activity mb-4">Education</h5>
-        <div className="d-flex mr-auto" style={{ marginLeft: "40em" }}>
+        <div className="d-flex mr-auto" style={{ marginLeft: "35em" }}>
           <PlusLg size={26} id="" className="mt-4 mr-4" />
           <PencilFill
             size={20}
