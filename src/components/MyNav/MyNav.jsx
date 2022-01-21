@@ -226,11 +226,11 @@ const MyNav = ({ userProfile, setUserProfile }) => {
                   />
                 </Link>
                 <div>
-                  <strong> veena Hallikeri (She/Her)</strong>
+                  <strong>  {userProfile.name} {userProfile.surname}</strong>
                   <br />
                   <small>
                     {" "}
-                    Frontend Developer Student at Strive School | Y Combinator
+                    {userProfile.title}
                   </small>
                 </div>
               </div>
