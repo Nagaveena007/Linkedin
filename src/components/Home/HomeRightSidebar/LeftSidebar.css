@@ -1,0 +1,27 @@
+#left-sidebar {
+  position: absolute;
+  top: 90px;
+  left: 224px;
+  width: 230px;
+  padding-left: 0px !important;
+  margin-left: 0px !important;
+}
+
+#left-sidebar .h5 {
+  font-weight: lighter !important;
+  font-weight: 400 !important;
+}
+
+#left-sidebar a {
+  font-size: 0.8rem;
+  font-weight: 00;
+  color: var(--blue);
+}
+
+#left-sidebar .card-footer {
+  border-top: 1px solid rgba(221, 221, 221, 0.5) !important;
+}
+
+#left-sidebar .card-footer:hover {
+  background-color: #f3f2ef !important;
+}
