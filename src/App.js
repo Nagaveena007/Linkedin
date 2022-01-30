@@ -9,6 +9,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DefaultFeeds from "./components/Home/DefaultFeeds";
 import NotFound from "./components/NotFound";
 import Notifications from "./components/Notification/Notifications";
+import Jobs from "./Jobs/Jobs";
+import Company from "./Jobs/Company";
 function App() {
   const [userProfile, setUserProfile] = useState({});
 
@@ -43,8 +45,14 @@ function App() {
               />
             }
           />
-          {/*           <Route path="/messages" element={<Messages />} />{" "}
-           */}{" "}
+          <Route
+            path="/jobs"
+            element={
+              <Jobs userProfile={userProfile} setUserProfile={setUserProfile} />
+            }
+          />
+          <Route path="/:company" element={<Company />} />
+
           <Route path="*" element={<NotFound error="Page not found" />} />
         </Routes>
       </BrowserRouter>

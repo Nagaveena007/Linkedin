@@ -226,17 +226,22 @@ const MyNav = ({ userProfile, setUserProfile }) => {
                   <img
                     className="navbar-icon-container d-none d-md-block"
                     id="navbar-logo"
-                    src={userProfile.image}                    
+                    src={userProfile.image}
                     alt="linkedin-logo"
+                    style={{
+                      borderRadius: "50%",
+                      width: "40px",
+                      height: "40px",
+                    }}
                   />
                 </Link>
                 <div>
-                  <strong>  {userProfile.name} {userProfile.surname}</strong>
-                  <br />
-                  <small>
+                  <strong>
                     {" "}
-                    {userProfile.title}
-                  </small>
+                    {userProfile.name} {userProfile.surname}
+                  </strong>
+                  <br />
+                  <small> {userProfile.title}</small>
                 </div>
               </div>
 
@@ -294,10 +299,12 @@ const MyNav = ({ userProfile, setUserProfile }) => {
                 <PeopleFill size={22} className="navbar-icon" />
                 My Network
               </div>
-              <div className="navbar-icon-container mt-2 text-center">
-                <BriefcaseFill size={22} className="navbar-icon" />
-                Jobs
-              </div>
+              <Link to="/jobs">
+                <div className="navbar-icon-container mt-2 text-center">
+                  <BriefcaseFill size={22} className="navbar-icon" />
+                  Jobs
+                </div>
+              </Link>
               <div className="navbar-icon-container mt-2 text-center">
                 <ChatDotsFill size={22} className="navbar-icon" />
                 Messaging
