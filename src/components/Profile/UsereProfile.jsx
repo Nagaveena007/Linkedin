@@ -41,7 +41,9 @@ const UsereProfile = ({ userProfile }) => {
                   (She/her)
                 </small>
               </h4>
-              <p className="my-0 occupation">{userProfile.title}</p>
+              <p className="my-0 occupation">
+                {userProfile.title}Frontend Developer
+              </p>
               <p className="my-0 location text-muted">
                 Electronics and Communication Engineer & Frontend Developer •
               </p>

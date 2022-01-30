@@ -241,7 +241,7 @@ const MyNav = ({ userProfile, setUserProfile }) => {
                     {userProfile.name} {userProfile.surname}
                   </strong>
                   <br />
-                  <small> {userProfile.title}</small>
+                  <small> {userProfile.title} Frontend Developer</small>
                 </div>
               </div>
 

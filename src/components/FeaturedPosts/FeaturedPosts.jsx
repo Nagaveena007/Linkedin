@@ -39,7 +39,7 @@ const FeaturedPosts = () => {
           <div className="row g-0" style={{ backgroundColor: "#f9fafb" }}>
             <div className="col-md-6">
               <img
-                src="https://media-exp1.licdn.com/dms/image/sync/C5627AQHfFErx6yiF0Q/articleshare-shrink_800/0/1641826486687?e=1642543200&v=beta&t=EmJxf1s5L0ixuzz1MPQc31pcNCA-tpho4AY29FrdPWg"
+                src="https://media-exp1.licdn.com/dms/image/sync/C5627AQHfFErx6yiF0Q/articleshare-shrink_800/0/1643036426082?e=1643655600&v=beta&t=ezmlT9LFjosWj7FsIW6-9v1Zh197YltZb3HeuXKYVoY"
                 className="img-fluid rounded-start"
                 alt="..."
               />
