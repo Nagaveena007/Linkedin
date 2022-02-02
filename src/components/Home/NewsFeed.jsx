@@ -20,7 +20,7 @@ const NewsFeed = ({ userProfile, setUserProfile }) => {
         "https://striveschool-api.herokuapp.com/api/posts/",
         {
           headers: {
-            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU2ODM3OWMyYzE4ODAwMTVhYjk0OWMiLCJpYXQiOjE2NDI0OTY4OTAsImV4cCI6MTY0MzcwNjQ5MH0.T6x0XrVZuqOI5X7c5AEoxgXRux2f4Q_UHHjEvuutJCc
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzYzIzZjJlOTVjZTAwMTVlZWQ3NTYiLCJpYXQiOjE2NDM4Mzk3MDIsImV4cCI6MTY0NTA0OTMwMn0.SQgmmRgrBpclLnHbb6i9mth7UzflcjSaX3-lQFVeA5U
             `,
           },
         }

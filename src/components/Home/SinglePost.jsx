@@ -25,7 +25,7 @@ const SinglePost = ({
   return (
     <div className="profile-sub-section p-2 my-2">
       <Card
-        style={{ width: "539.41px", borderRadius: "7px", marginLeft: "11.6em" }}
+        style={{ width: "583.41px", borderRadius: "7px", marginLeft: "11.6em" }}
         className="mb-2 "
       >
         <Card.Body>
@@ -65,7 +65,7 @@ const SinglePost = ({
             </span>
             {pathname === "/" && (
               <i
-                style={{ marginLeft: "16em" }}
+                style={{ marginLeft: "auto" }}
                 className="bi bi-three-dots"
                 onClick={() => handleEdit(post._id)}
               ></i>
