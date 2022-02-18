@@ -64,7 +64,7 @@ const StartAPost = () => {
           body: JSON.stringify(newPostToSend),
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU2ODM3OWMyYzE4ODAwMTVhYjk0OWMiLCJpYXQiOjE2NDI0OTY4OTAsImV4cCI6MTY0MzcwNjQ5MH0.T6x0XrVZuqOI5X7c5AEoxgXRux2f4Q_UHHjEvuutJCc
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBmNzk1OGRhZDc4ZTAwMTUxNTI1MmEiLCJpYXQiOjE2NDUxODEyNzIsImV4cCI6MTY0NjM5MDg3Mn0.wBgPAa6-uLUeIBWwg3QiSXQPB4SXtPBALJfhKHKGlAI
             `,
           },
         }
