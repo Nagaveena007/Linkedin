@@ -291,10 +291,12 @@ const MyNav = ({ userProfile, setUserProfile }) => {
                 <PeopleFill size={22} className="navbar-icon" />
                 My Network
               </div>
-              <div className="navbar-icon-container mt-2 text-center">
-                <BriefcaseFill size={22} className="navbar-icon" />
-                Jobs
-              </div>
+              <Link to="/jobs">
+                <div className="navbar-icon-container mt-2 text-center">
+                  <BriefcaseFill size={22} className="navbar-icon" />
+                  Jobs
+                </div>
+              </Link>
               <div className="navbar-icon-container mt-2 text-center">
                 <ChatDotsFill size={22} className="navbar-icon" />
                 Messaging
