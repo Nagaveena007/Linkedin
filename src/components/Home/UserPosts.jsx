@@ -21,7 +21,7 @@ const UserPosts = ({ postsAdded }) => {
         `https://striveschool-api.herokuapp.com/api/posts/${selectedPost}`,
         {
           headers: {
-            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzYzIzZjJlOTVjZTAwMTVlZWQ3NTYiLCJpYXQiOjE2NDM4Mzk3MDIsImV4cCI6MTY0NTA0OTMwMn0.SQgmmRgrBpclLnHbb6i9mth7UzflcjSaX3-lQFVeA5U
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBmNzk1OGRhZDc4ZTAwMTUxNTI1MmEiLCJpYXQiOjE2NDUxODEyNzIsImV4cCI6MTY0NjM5MDg3Mn0.wBgPAa6-uLUeIBWwg3QiSXQPB4SXtPBALJfhKHKGlAI
             `,
           },
         }
@@ -53,7 +53,7 @@ const UserPosts = ({ postsAdded }) => {
         {
           method: "DELETE",
           headers: {
-            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzYzIzZjJlOTVjZTAwMTVlZWQ3NTYiLCJpYXQiOjE2NDM4Mzk3MDIsImV4cCI6MTY0NTA0OTMwMn0.SQgmmRgrBpclLnHbb6i9mth7UzflcjSaX3-lQFVeA5U
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBmNzk1OGRhZDc4ZTAwMTUxNTI1MmEiLCJpYXQiOjE2NDUxODEyNzIsImV4cCI6MTY0NjM5MDg3Mn0.wBgPAa6-uLUeIBWwg3QiSXQPB4SXtPBALJfhKHKGlAI
             `,
           },
         }
@@ -79,7 +79,7 @@ const UserPosts = ({ postsAdded }) => {
           }),
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzYzIzZjJlOTVjZTAwMTVlZWQ3NTYiLCJpYXQiOjE2NDM4Mzk3MDIsImV4cCI6MTY0NTA0OTMwMn0.SQgmmRgrBpclLnHbb6i9mth7UzflcjSaX3-lQFVeA5U
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBmNzk1OGRhZDc4ZTAwMTUxNTI1MmEiLCJpYXQiOjE2NDUxODEyNzIsImV4cCI6MTY0NjM5MDg3Mn0.wBgPAa6-uLUeIBWwg3QiSXQPB4SXtPBALJfhKHKGlAI
             `,
           },
         }
@@ -99,7 +99,7 @@ const UserPosts = ({ postsAdded }) => {
         "https://striveschool-api.herokuapp.com/api/posts",
         {
           headers: {
-            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzYzIzZjJlOTVjZTAwMTVlZWQ3NTYiLCJpYXQiOjE2NDM4Mzk3MDIsImV4cCI6MTY0NTA0OTMwMn0.SQgmmRgrBpclLnHbb6i9mth7UzflcjSaX3-lQFVeA5U
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBmNzk1OGRhZDc4ZTAwMTUxNTI1MmEiLCJpYXQiOjE2NDUxODEyNzIsImV4cCI6MTY0NjM5MDg3Mn0.wBgPAa6-uLUeIBWwg3QiSXQPB4SXtPBALJfhKHKGlAI
             `,
           },
         }

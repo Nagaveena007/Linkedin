@@ -1,4 +1,6 @@
 import { Card, Container, Row } from "react-bootstrap";
+import image from "../../assests/featured-post.png";
+
 import "./Activity.css";
 const Activity = () => {
   return (
@@ -32,7 +34,7 @@ const Activity = () => {
           >
             <div className="col-md-2 ">
               <img
-                src="https://media-exp1.licdn.com/dms/image/sync/C5627AQHfFErx6yiF0Q/articleshare-shrink_800/0/1643036426082?e=1643655600&v=beta&t=ezmlT9LFjosWj7FsIW6-9v1Zh197YltZb3HeuXKYVoY"
+                src={image}
                 className="img-fluid rounded-start ml-3"
                 alt="..."
               />
@@ -70,7 +72,7 @@ const Activity = () => {
           >
             <div className="col-md-2 ">
               <img
-                src="https://media-exp1.licdn.com/dms/image/sync/C5627AQHfFErx6yiF0Q/articleshare-shrink_800/0/1643036426082?e=1643655600&v=beta&t=ezmlT9LFjosWj7FsIW6-9v1Zh197YltZb3HeuXKYVoY"
+                src={image}
                 className="img-fluid rounded-start ml-3"
                 alt="..."
               />

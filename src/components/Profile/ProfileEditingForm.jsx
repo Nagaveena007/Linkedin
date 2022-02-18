@@ -51,7 +51,7 @@ const ProfileEditForm = ({ profileDetails }) => {
           headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
-            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzYzIzZjJlOTVjZTAwMTVlZWQ3NTYiLCJpYXQiOjE2NDM4Mzk3MDIsImV4cCI6MTY0NTA0OTMwMn0.SQgmmRgrBpclLnHbb6i9mth7UzflcjSaX3-lQFVeA5U`,
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBmNzk1OGRhZDc4ZTAwMTUxNTI1MmEiLCJpYXQiOjE2NDUxODEyNzIsImV4cCI6MTY0NjM5MDg3Mn0.wBgPAa6-uLUeIBWwg3QiSXQPB4SXtPBALJfhKHKGlAI`,
           },
         }
       );
@@ -75,7 +75,7 @@ const ProfileEditForm = ({ profileDetails }) => {
           headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
-            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzYzIzZjJlOTVjZTAwMTVlZWQ3NTYiLCJpYXQiOjE2NDM4Mzk3MDIsImV4cCI6MTY0NTA0OTMwMn0.SQgmmRgrBpclLnHbb6i9mth7UzflcjSaX3-lQFVeA5U`,
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBmNzk1OGRhZDc4ZTAwMTUxNTI1MmEiLCJpYXQiOjE2NDUxODEyNzIsImV4cCI6MTY0NjM5MDg3Mn0.wBgPAa6-uLUeIBWwg3QiSXQPB4SXtPBALJfhKHKGlAI`,
           },
           method: "PUT",
           body: JSON.stringify(data),
@@ -99,7 +99,7 @@ const ProfileEditForm = ({ profileDetails }) => {
         `https://striveschool-api.herokuapp.com/api/profile/${profileID}/picture`,
         {
           headers: {
-            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzYzIzZjJlOTVjZTAwMTVlZWQ3NTYiLCJpYXQiOjE2NDM4Mzk3MDIsImV4cCI6MTY0NTA0OTMwMn0.SQgmmRgrBpclLnHbb6i9mth7UzflcjSaX3-lQFVeA5U`,
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBmNzk1OGRhZDc4ZTAwMTUxNTI1MmEiLCJpYXQiOjE2NDUxODEyNzIsImV4cCI6MTY0NjM5MDg3Mn0.wBgPAa6-uLUeIBWwg3QiSXQPB4SXtPBALJfhKHKGlAI`,
           },
           method: "POST",
           body: formData,

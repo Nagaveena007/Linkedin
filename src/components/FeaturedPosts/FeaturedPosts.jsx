@@ -1,4 +1,5 @@
 import { Card, Container, Row } from "react-bootstrap";
+import image from "../../assests/featured-post.png";
 import "./FeaturedPosts.css";
 const FeaturedPosts = () => {
   return (
@@ -38,11 +39,7 @@ const FeaturedPosts = () => {
           <small className="text-muted py-2 px-2">Link · 1yr</small>
           <div className="row g-0" style={{ backgroundColor: "#f9fafb" }}>
             <div className="col-md-6">
-              <img
-                src="https://media-exp1.licdn.com/dms/image/sync/C5627AQHfFErx6yiF0Q/articleshare-shrink_800/0/1643036426082?e=1643655600&v=beta&t=ezmlT9LFjosWj7FsIW6-9v1Zh197YltZb3HeuXKYVoY"
-                className="img-fluid rounded-start"
-                alt="..."
-              />
+              <img src={image} className="img-fluid rounded-start" alt="..." />
             </div>
             <div className="col-md-6">
               <div className="card-body">
