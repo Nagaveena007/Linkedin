@@ -288,7 +288,7 @@ const StartAPost = () => {
                     as="textarea"
                     placeholder="What do you want to talk about?"
                     rows={5}
-                    style={{ border: "transparent", width: "65vh" }}
+                    style={{ border: "transparent", width: "60vh" }}
                     value={newPost.text}
                     onChange={(e) =>
                       setNewPost({
