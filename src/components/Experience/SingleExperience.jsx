@@ -61,8 +61,7 @@ const SingleExperience = ({
           body: JSON.stringify(experience),
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBmNzk1OGRhZDc4ZTAwMTUxNTI1MmEiLCJpYXQiOjE2NDUxODEyNzIsImV4cCI6MTY0NjM5MDg3Mn0.wBgPAa6-uLUeIBWwg3QiSXQPB4SXtPBALJfhKHKGlAI
-            `,
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTgyODk0ZGFhY2FhMjAwMTU1MmExNjMiLCJpYXQiOjE2NDcyMDA1NDksImV4cCI6MTY0ODQxMDE0OX0.jvevIIFZ6m_8Kc_HzG1QONy_5QZdyHbXIrUnLvUm0JY`,
           },
         }
       );
@@ -84,8 +83,7 @@ const SingleExperience = ({
         `https://striveschool-api.herokuapp.com/api/profile/61e68379c2c1880015ab949c/experiences/${selectedExperience}`,
         {
           headers: {
-            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBmNzk1OGRhZDc4ZTAwMTUxNTI1MmEiLCJpYXQiOjE2NDUxODEyNzIsImV4cCI6MTY0NjM5MDg3Mn0.wBgPAa6-uLUeIBWwg3QiSXQPB4SXtPBALJfhKHKGlAI
-            `,
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTgyODk0ZGFhY2FhMjAwMTU1MmExNjMiLCJpYXQiOjE2NDcyMDA1NDksImV4cCI6MTY0ODQxMDE0OX0.jvevIIFZ6m_8Kc_HzG1QONy_5QZdyHbXIrUnLvUm0JY`,
           },
         }
       );
@@ -111,8 +109,7 @@ const SingleExperience = ({
         {
           method: "DELETE",
           headers: {
-            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBmNzk1OGRhZDc4ZTAwMTUxNTI1MmEiLCJpYXQiOjE2NDUxODEyNzIsImV4cCI6MTY0NjM5MDg3Mn0.wBgPAa6-uLUeIBWwg3QiSXQPB4SXtPBALJfhKHKGlAI
-            `,
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTgyODk0ZGFhY2FhMjAwMTU1MmExNjMiLCJpYXQiOjE2NDcyMDA1NDksImV4cCI6MTY0ODQxMDE0OX0.jvevIIFZ6m_8Kc_HzG1QONy_5QZdyHbXIrUnLvUm0JY`,
           },
         }
       );
